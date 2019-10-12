@@ -1,0 +1,112 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 255  231  239 }
+
+historical_idea_groups = {
+	defensive_ideas
+	religious_ideas
+	offensive_ideas
+	spy_ideas
+	trade_ideas
+	innovativeness_ideas
+	economic_ideas
+	quantity_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	swiss_landsknechten
+	french_caracolle
+	anglofrench_line
+	french_dragoon
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Raden Patah #0" = 50
+	"Pati Unus #0" = 50
+	"Trenggana #0" = 50
+	"Sunan Prawata #0" = 50
+	"Arya Penangsang #0" = 50
+	"Rajasavardhana #0" = 10
+	"Hyang Purwawisesa #0" = 10
+	"Pandan Solas #0" = 10
+	"Kertabumi #0" = 10
+	"Raden Patah Senapati #0" = 10
+	"Pengeran Sabrang Lar #0" = 10
+	"Pengeran Sutan Tranganna #0" = 10
+	"Pengeran Sultan Prawata #0" = 10
+	"Pangeran Mas #0" = 10
+	"Dyah Ranawijaya #0" = 10
+	"Pateudra #0" = 10
+	"Panembahan Ingalasa #0" = 10
+	"Sultan Agung #0" = 10
+	"Pakubuwana #0" = 10
+	"Senapati Jimbun #0" = 10
+	"Sabrang Lor #0" = 10
+	"Tranggana #0" = 10
+	"Benawa #0" = 10
+	"Krapyak #0" = 10
+	"Amangkurat #0" = 30
+	"Prawata #0" = 10
+	"Aria Pangiri #0" = 10
+	
+	"Mawar #0" = -1
+	"Arij #0" = -1
+	"Suhita #0" = -5
+	"Cinta #0" = -1
+	"Wangi #0" = -1
+	"Prajnaparamitha #0" = -1
+	"Tribhuawana #0" = -5
+	"Gayatri #0" = -5
+	"Narendra Duhita #0" = -1
+	"Indreswari #0" = -1
+	"Kawunganten #0" = -1
+	"Tepasari #0" = -1
+	"Semboja #0" = -1
+	"Tingkir #0" = -1
+	"Pakungwati #0" = -1
+	"Endang Geulis #0" = -1
+	"Adiningkusuma #0" = -1
+	"Kalinyamat #0" = -10
+}
+
+ship_names = {
+	"The Holy Cross"
+	"The Grail"
+	"The Faithful"
+	"Hammer of God"
+	"True Believer"
+	"The Cleansing"
+	"Baldwin's Gate"
+	"The Rapture"
+	"God Will Know His Own"
+	Paladin
+	Purifier
+	Crusader
+	Guardian
+	Pilgrim
+	Absolution
+	Avenger
+	Vindicator
+	"The Scourge"
+}
+
+leader_names = {
+	Djajadiningrat Djojopoespito 
+	Ernalia 
+	Karsumaatmaja 
+	Mollema 
+	Nasution Nitisastro 
+	Prawiranega Purbacaraka 
+	Subadio Sumual 
+}
