@@ -1,0 +1,10 @@
+type = infantry              # One of the internal types
+unit_type = Dhimmi    # Optional. The technology group the unit appears for. Leaving it out will display the unit for all technology groups. 
+
+maneuver = 1                    # 1 for infantry and artillery, 2 for cavalry
+offensive_morale = 4
+defensive_morale = 4
+offensive_fire = 4
+defensive_fire = 3
+offensive_shock = 4
+defensive_shock = 3
