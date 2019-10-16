@@ -1,3 +1,5 @@
+Versian 1.4 "Mongol"
+
 Version 1.3
 	+ added Qahirah, Niqyia, Vladmir, Sakisun, Danish Sword Brothers, idirsids, Galicia, and Templar Order
 	+ Yunans can form Rum, Muslim russians can form Rusyya, and Volkovy russianhs can form ruthenia, and Andalucians can form Qastany
@@ -42,11 +44,11 @@ Version 1.2.1 Patch
 	* Changed Italiu states to be Shi'a
 	* Freed Majorca nation
 	* Hungarians are now all Tengri and tribal
-	* Gave León a starting heir
+	* Gave LeÃ³n a starting heir
 	* Bug fixes
 
 Version 1.2.0_01
-	* Fixed León and Portugal not being historical friends
+	* Fixed LeÃ³n and Portugal not being historical friends
 	* Fixed problems with the archive
 
 Version 1.2 (Poland Update)
