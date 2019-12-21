@@ -1,0 +1,109 @@
+SQL_slot_2 = {
+    slot = 2                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+		OR = {
+			tag = SQL
+			tag = IIT
+		}
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	SQL_illyira = {
+		icon = mission_assemble_an_army
+		position = 6
+		required_missions = { SQL_naval }
+		trigger = { army_size = 40 }
+		effect = {
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	SQL_serbia = {
+		icon = mission_assemble_an_army
+		position = 7
+		required_missions = { SQL_illyira }
+		trigger = { army_size = 40 }
+		effect = {
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+			}
+		}
+	}
+}
+
+SQL_slot_1 = {
+    slot = 1                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        OR = {
+			tag = SQL
+			tag = IIT
+		}
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	SQL_islands = {
+		icon = mission_assemble_an_army
+		position = 4
+		required_missions = { italu_sicily }
+		trigger = { army_size = 40 }
+		effect = {
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	SQL_naval = {
+		icon = mission_assemble_an_army
+		position = 5
+		required_missions = { SQL_islands }
+		trigger = { army_size = 40 }
+		effect = {
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	SQL_motherland = {
+		icon = mission_assemble_an_army
+		position = 6
+		required_missions = { SQL_naval }
+		trigger = { army_size = 40 }
+		effect = {
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	
+	SQL_africa = {
+		icon = mission_assemble_an_army
+		position = 7
+		required_missions = { SQL_motherland }
+		trigger = { army_size = 40 }
+		effect = {
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+			}
+		}
+	}
+}
