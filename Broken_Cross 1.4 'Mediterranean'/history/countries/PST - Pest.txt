@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = hungarian
+religion = tengri_pagan_reformed
+secondary_religion = bogomilist
+technology_group = eastern
+capital = 153 # Pest
+government_rank = 1
+
+1442.1.1 = {
+	monarch = {
+		name = "István VI"
+		dynasty = "Hajdú"
+		adm = 6
+		dip = 5
+		mil = 2
+	}
+}

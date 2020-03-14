@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = norwegian
+religion = norse_pagan_reformed
+technology_group = western
+capital = 20 #Trondheim
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Olaf IV"
+		dynasty = "Bjelbo"
+		culture = norwegian
+		birth_date = 1419.9.18
+		adm = 1
+		dip = 2
+		mil = 1
+	}
+}

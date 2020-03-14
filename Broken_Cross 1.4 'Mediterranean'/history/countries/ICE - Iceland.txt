@@ -1,0 +1,15 @@
+government = republic
+primary_culture = norwegian
+religion = norse_pagan_reformed
+technology_group = western
+capital = 370 #Rejkyavik
+
+1443.8.15 = {
+	monarch = {
+		name = "Harald"
+		dynasty = "Haraldsson"
+		adm = 1
+		dip = 4
+		mil = 4
+	}
+}

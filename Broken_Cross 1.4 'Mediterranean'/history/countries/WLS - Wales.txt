@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = welsh
+religion = insular
+capital = 242	# Gwynedd
+
+1443.8.15 = {
+	monarch = {
+		name = "Cadwaladr IV"
+		dynasty = "of Bristol"
+		adm = 6
+		dip = 1
+		mil = 4
+	}
+}

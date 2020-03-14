@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = hungarian
+religion = tengri_pagan_reformed
+secondary_religion = bogomilist
+technology_group = eastern
+capital = 1954 # Torontál
+government_rank = 1
+
+1442.1.1 = {
+	monarch = {
+		name = "Ulászló II"
+		dynasty = "Czeszneky"
+		adm = 3
+		dip = 3
+		mil = 4
+	}
+	add_piety = -0.3
+}

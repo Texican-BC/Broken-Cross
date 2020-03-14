@@ -1,0 +1,43 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+primary_culture = yunanian
+religion = sunni
+technology_group = muslim
+capital = 4309	# Aydin
+religious_school = hanafi_school
+
+1402.1.1 = {
+	monarch = {
+		name = "Umar II"
+		dynasty = "Aydinoglu"
+		adm = 1
+		dip = 2
+		mil = 0
+	}
+	add_piety = 0.3
+}
+
+1402.1.1 = {
+	heir = {
+		name = "Suleyman"
+		monarch_name = "Suleyman"
+		dynasty = "Aydinoglu"
+		birth_date = 1380.1.1
+		death_date = 1425.1.1
+		claim = 95
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}
+
+1440.1.1 = {
+	monarch = {
+		name = "Suleyman"
+		dynasty = "Samirana"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}

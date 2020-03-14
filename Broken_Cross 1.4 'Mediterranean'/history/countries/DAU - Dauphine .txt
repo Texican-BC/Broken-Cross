@@ -1,0 +1,26 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = chalcedonism
+primary_culture = occitain
+capital = 204	# Grenoble
+
+1443.8.15 = {
+	monarch = {
+		name = "Guigues IX"
+		dynasty = "de Rougé"
+		adm = 1
+		dip = 4
+		mil = 5
+	}
+}
+
+
+1515.1.1 = { government = monarchy
+add_government_reform = autocracy_reform }
+
+1589.8.3 = { set_legacy_government = administrative_monarchy }
+
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

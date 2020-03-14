@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = highland_scottish
+religion = insular
+technology_group = western
+capital = 4365 # Mann
+
+1443.8.15 = {
+	monarch = {
+		name = "Ruari IV"
+		dynasty = "Singlear"
+		adm = 2
+		dip = 5
+		mil = 2
+	}
+}

@@ -1,0 +1,225 @@
+MLO_slot_1 = {
+    slot = 1                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = MLO
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	MLO_piedmont = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		provinces_to_highlight = {
+			area = piedmont_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			piedmont_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			liguria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	MLO_lingurian = {
+		icon = mission_assemble_an_army
+		required_missions = { MLO_piedmont }
+		provinces_to_highlight = {
+			area = liguria_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			liguria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			emilia_romagna_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	MLO_cites = {
+		icon = mission_assemble_an_army
+		required_missions = { MLO_lingurian }
+		provinces_to_highlight = {
+			area = emilia_romagna_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			emilia_romagna_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			tuscany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	MLO_tuscany = {
+		icon = mission_assemble_an_army
+		required_missions = { MLO_cites }
+		provinces_to_highlight = {
+			area = tuscany_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tuscany_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			baleares_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+MLO_slot_3 = {
+    slot = 3                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = MLO
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	MLO_aqulia = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 110
+			province_id = 108
+			province_id = 1774
+			province_id = 111
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = { 
+			owns = 110
+			owns = 108
+			owns = 1774
+			owns = 111
+		}
+		effect = {
+			110 = {
+				add_permanent_claim = ROOT
+			}
+			108 = {
+				add_permanent_claim = ROOT
+			}
+			1774 = {
+				add_permanent_claim = ROOT
+			}
+			111 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	MLO_compatition = {
+		icon = mission_assemble_an_army
+		required_missions = { MLO_aqulia }
+		trigger = {
+			navy_size = VEN
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = MLO_merchants_inspired
+				duration = 7300
+			}
+			112 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	MLO_venice = {
+		icon = mission_assemble_an_army
+		required_missions = { MLO_compatition }
+		provinces_to_highlight = {
+			province_id = 112
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = { 
+			owns = 112
+		}
+		effect = {
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+			}
+			east_adriatic_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	MLO_adriatic = {
+		icon = mission_assemble_an_army
+		required_missions = { MLO_venice }
+		provinces_to_highlight = {
+			area = east_adriatic_coast_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			effect = {
+				121 = {
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}

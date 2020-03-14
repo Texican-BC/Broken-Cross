@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = eastern
+religion = slavic_pagan_reformed
+primary_culture = ryazanian
+capital = 289	# Chernigov
+fixed_capital = 289 # Cannot move capital away from this province & no power cost to move to it
+
+1443.8.15 = {
+	monarch = {
+		name = "Vladmir III"
+		dynasty = "Lobanov-Rostovsky"
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

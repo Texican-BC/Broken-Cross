@@ -1,0 +1,18 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = cosmopolitan_french
+religion = chalcedonism
+technology_group = western
+capital = 89 # picardy
+fixed_capital = 89 # Cannot move capital away from this province & no power cost to move to it
+
+1443.8.15 = {
+	monarch = {
+		name = "Louis I"
+		dynasty = "de Picardy"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

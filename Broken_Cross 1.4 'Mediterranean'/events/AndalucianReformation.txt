@@ -1,0 +1,134 @@
+#Andalucian Reformation
+namespace = andalucian_reformation
+country_event = {
+	id = andalucian_reformation.1
+	title ="andalucian_reformation.1_1_title"
+	desc = "andalucian_reformation.1_1_desc"
+	picture = RELIGION_eventPicture
+	major = yes
+	
+	trigger = {
+		is_defender_of_faith = no
+		OR = {
+			religion = sunni
+			religion = shiite
+		}
+		OR = {
+			exists = QST
+			exists = ADU
+			is_year = 1500 
+		}
+		OR = {
+			culture_group = french
+			culture_group = iberian
+		}	
+	}
+	mean_time_to_happen = {
+		months = 120
+		
+		modifier = {
+			factor = 0.5
+			is_year = 1500 
+		}
+		modifier = {
+			factor = 0.5
+			is_year = 1520 
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 5
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 6
+		}
+		modifier = {
+			factor = 0.9
+			religious_ideas = 7
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { religious_ideas = 3 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { religious_ideas = 2 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { religious_ideas = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			num_of_rebel_controlled_provinces = 1
+		}
+		modifier = {
+			factor = 2.0
+			government = theocracy
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_overseas = no
+					OR = {
+						culture_group = iberian
+						culture_group = french
+					}
+				}
+				change_religion =  Ailtazamat
+				add_permanent_province_modifier = {
+					name = "religious_zeal_at_conv"
+					duration = 9000
+				}
+			}
+			enable_religion = Ailtazamat
+		}
+	}	
+	option = {
+		name = "embrace_ailtazamat"
+		set_country_flag = embraced_reform
+		change_religion =  Ailtazamat
+		add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 730
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture_group = iberian
+					culture_group = french
+				}
+				religion = sunni
+			}
+			change_religion = Ailtazamat
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+		}		
+	}
+	option = {
+		name = "fight_ailtazamat"
+		set_country_flag = fought_reform
+		add_stability = -2
+		add_prestige = -50
+		add_piety = 0.5 
+		random_owned_province = {
+			limit = {
+				is_overseas = no
+				OR = {
+					culture_group = iberian
+					culture_group = french
+				}
+				religion = sunni
+			}
+			spawn_rebels = {
+				type =  Ailtazamat_rebels
+				size = 3
+				leader = Ailtazamat_preacher
+			}
+		}
+	}
+}

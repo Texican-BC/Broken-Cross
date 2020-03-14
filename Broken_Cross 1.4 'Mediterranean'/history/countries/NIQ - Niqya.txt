@@ -1,0 +1,24 @@
+government = monarchy
+add_government_reform = iqta
+government_rank = 2
+primary_culture = yunanian
+religion = sunni
+technology_group = muslim
+historical_rival = TRQ
+historical_rival = HSN
+religious_school = shafii_school
+capital = 316	# Kocaeli
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Hizir I"
+		dynasty = "Heraculid"
+                culture = yunanian
+		birth_date = 1419.9.18
+		adm = 5
+		dip = 3
+		mil = 4
+	}
+	add_piety = -0.25
+}

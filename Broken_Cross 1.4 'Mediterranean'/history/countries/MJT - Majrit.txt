@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = granadan
+religion = sunni
+technology_group = muslim
+capital = 219	# Toledo
+government_rank = 1
+religious_school = maliki_school
+
+1442.1.1 = {
+	monarch = {
+		name = "Dawud I"
+		dynasty = "Nasrid"
+		adm = 2
+		dip = 2
+		mil = 1
+	}
+	add_piety = -0.3
+}

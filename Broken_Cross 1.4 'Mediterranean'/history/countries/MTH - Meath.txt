@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = irish
+religion = insular
+capital = 373	# Dublin
+
+1442.8.15 = {
+	monarch = {
+		name = "Conn II"
+		dynasty = "MacMorrough"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}

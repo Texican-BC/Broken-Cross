@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = cosmopolitan_french
+religion = chalcedonism
+technology_group = western
+capital = 4111	# Saitonge
+fixed_capital = 4111 # Cannot move capital away from this province & no power cost to move to it
+
+1442.1.1 = {
+	monarch = {
+		name = "Louis I"
+		dynasty = "le Sully"
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+}
+
+1442.11.24 = {
+	heir = {
+		name = "Charles"
+		monarch_name = "Charles I"
+		dynasty = "le Sully"
+		birth_date = 1394.11.24
+		death_date = 1465.1.5
+		claim = 95
+		adm = 1
+		dip = 3
+		mil = 0
+	}
+}

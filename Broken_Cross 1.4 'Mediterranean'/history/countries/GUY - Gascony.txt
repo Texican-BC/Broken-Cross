@@ -1,0 +1,29 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+primary_culture = gascon
+add_accepted_culture = cosmopolitan_french
+religion = chalcedonism
+capital = 174 	# Bordeaux
+
+1443.8.15 = {
+	monarch = {
+		name = "Richard III"
+		dynasty = "de Penthievre"
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}
+
+
+1515.1.1 = { government = monarchy
+add_government_reform = autocracy_reform }
+
+1560.1.1 = { religion = reformed }
+
+1589.8.3 = { set_legacy_government = administrative_monarchy }
+
+1661.3.9 = { government = monarchy
+add_government_reform = autocracy_reform }

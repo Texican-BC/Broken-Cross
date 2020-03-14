@@ -1,0 +1,16 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+primary_culture = norsanglic
+religion = Bretlandic
+capital = 236	# London
+
+1441.8.15 = {
+	monarch = {
+		name = "Björn III"
+		dynasty = "Tolikr"
+		adm = 1
+		dip = 3
+		mil = 3
+	}
+}

@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = yunanian
+religion = sunni
+technology_group = muslim
+capital = 148	# Macedonia
+historical_rival = NIQ
+historical_rival = HSN
+government_rank = 1
+religious_school = hanafi_school
+
+1442.1.1 = {
+	monarch = {
+		name = "Muhammad VI"
+		dynasty = "Yakubid"
+		adm = 4
+		dip = 3
+		mil = 2
+	}
+	add_piety = -0.3
+}

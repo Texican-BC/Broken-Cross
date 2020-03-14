@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+primary_culture = norsanglic
+religion = Bretlandic
+historical_rival = LNC
+capital = 246	# Newcastle
+
+1443.8.15 = {
+	monarch = {
+		name = "Henry V"
+		dynasty = "Heænnla"
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}

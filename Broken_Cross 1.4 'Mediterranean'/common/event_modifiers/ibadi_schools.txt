@@ -1,0 +1,8 @@
+ibadi_scholar_modifier = {
+	religious_unity = 0.1
+	religion = yes
+}
+ash_scholar_modifier = {
+	recover_army_morale_speed = 0.1
+	religion = yes
+}

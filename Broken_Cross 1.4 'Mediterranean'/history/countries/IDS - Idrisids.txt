@@ -1,0 +1,43 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = moroccan
+religion = shiite
+technology_group = muslim
+capital = 344 # Marrakech
+add_accepted_culture = berber
+religious_school = ismaili_school
+
+1399.1.1 = {
+	monarch = {
+		name = "Abu-Sa'id Uthman III"
+		dynasty = "Idrisid"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+	add_piety = 0.4
+}
+
+1399.1.1 = {
+	heir = {
+		name = "Abdalhaqq"
+		monarch_name = "Abdalhaqq II"
+		dynasty = "Idrisid"
+		birth_date = 1399.1.1
+		death_Date = 1465.1.1
+		claim = 95
+		adm = 0
+		dip = 2
+		mil = 0
+	}
+}
+
+1420.1.1 = {
+	monarch = {
+		name = "Abdalhaqq II"
+		dynasty = "Idrisid"
+		adm = 4
+		dip = 2
+		mil = 1
+	}
+}

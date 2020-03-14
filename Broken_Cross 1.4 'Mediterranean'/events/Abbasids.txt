@@ -1,0 +1,187 @@
+#Abbasid partition
+namespace = abbasid_event
+country_event = {
+	id = abbasid_event.1
+	title = "abbasid_event.1.t"
+	desc = "abbasid_event.1.d"
+	picture = CHURCH_ESTATE_2_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = TRQ_attacks }
+		NOT = { has_global_flag = TRQ_Partitions }
+		normal_or_historical_nations = yes
+		tag = TRQ
+		exists = HSN
+		exists = NIQ
+		is_year = 1453
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "TRQ_attacks"
+		ai_chance = { factor = 75 }
+		set_global_flag = TRQ_attacks
+		declare_war_with_cb = {
+			who = HSN
+			casus_belli = cb_annex
+		}
+	}
+	
+	option = {
+		name = "TRQ_partitions"
+		ai_chance = { factor = 25 }
+		set_global_flag = TRQ_Partitions
+		149 = { cede_province = TRQ } 
+		149 = { add_core = TRQ }
+	}
+}
+
+country_event = {
+	id = abbasid_event.2
+	title = "abbasid_event.2.t"
+	desc = "abbasid_event.2.d"
+	picture = CHURCH_ESTATE_2_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = NIQ_attacks }
+		NOT = { has_global_flag = NIQ_Partitions }
+		normal_or_historical_nations = yes
+		tag = NIQ
+		exists = HSN
+		exists = TRQ
+		is_year = 1453
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	option = {
+		name = "NIQ_attacks"
+		ai_chance = { factor = 75 }
+		set_global_flag = NIQ_attacks
+		declare_war_with_cb = {
+			who = HSN
+			casus_belli = cb_annex
+		}
+	}
+	
+	option = {
+		name = "NIQ_partitions"
+		ai_chance = { factor = 25 }
+		set_global_flag = NIQ_Partitions
+		2296 = { cede_province = NIQ } 
+		149 = { add_core = NIQ }
+	}
+}
+
+country_event = {
+	id = abbasid_event.3
+	title = "abbasid_event.3.t"
+	desc = "abbasid_event.3.d"
+	picture = CHURCH_ESTATE_2_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = NIQ_Partitions }
+		NOT = { has_global_flag = TRQ_Partitions }
+		NOT = { has_global_flag = TRQ_retaliates }
+		NOT = { has_global_flag = TRQ_pulls }
+		normal_or_historical_nations = yes
+		NOT = { exists = HSN }
+		exists = NIQ
+		exists = TRQ
+		151 = { owned_by = NIQ }
+		is_year = 1453
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "TRQ_retaliates"
+		ai_chance = { factor = 75 }
+		set_global_flag = TRQ_retaliates
+		declare_war_with_cb = {
+			who = NIQ
+			casus_belli = cb_annex
+		}
+	}
+	
+	option = {
+		name = "TRQ_pulls"
+		ai_chance = { factor = 25 }
+		set_global_flag = TRQ_pulls
+		add_prestige = -25
+		add_legitimacy = -10
+	}
+}
+
+country_event = {
+	id = abbasid_event.4
+	title = "abbasid_event.4.t"
+	desc = "abbasid_event.4.d"
+	picture = CHURCH_ESTATE_2_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = NIQ_Partitions }
+		NOT = { has_global_flag = TRQ_Partitions }
+		NOT = { has_global_flag = NIQ_retaliates }
+		NOT = { has_global_flag = NIQ_pulls }
+		normal_or_historical_nations = yes
+		NOT = { exists = HSN }
+		exists = NIQ
+		exists = TRQ
+		151 = { owned_by = TRQ }
+		is_year = 1453
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "NIQ_retaliates"
+		ai_chance = { factor = 75 }
+		set_global_flag = NIQ_retaliates
+		declare_war_with_cb = {
+			who = TRQ
+			casus_belli = cb_annex
+		}
+	}
+	
+	option = {
+		name = "NIQ_pulls"
+		ai_chance = { factor = 25 }
+		set_global_flag = NIQ_pulls
+		add_prestige = -25
+		add_legitimacy = -10
+	}
+}
+
+country_event = {
+	id = abbasid_event.5
+	title = "abbasid_event.5.t"
+	desc = "abbasid_event.5.d"
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	Trigger = {
+	NOT = { has_global_flag = HSN_falls }
+		Or = {
+			151 = { owned_by = TRQ }
+			151 = { owned_by = NIQ }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = "HSN_falls"
+		set_global_flag = HSN_falls
+	}
+}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = byelorussian
+religion = slavic_pagan_reformed
+technology_group = eastern
+capital = 276	# Minsk
+fixed_capital = 276 # Cannot move capital away from this province & no power cost to move to it
+
+1444.1.1 = {
+	monarch = {
+		name = "Svyatoslaw II"
+		dynasty = "Potyomkin"
+		birth_date = 1422.4.11	
+		adm = 4
+		dip = 2
+		mil = 3
+	}
+}

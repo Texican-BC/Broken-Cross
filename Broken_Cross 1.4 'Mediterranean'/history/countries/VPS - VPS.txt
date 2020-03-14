@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = tribal_kingdom
+government_rank = 1
+religion = finnish_pagan_reformed
+primary_culture = uralic
+technology_group = eastern
+capital = 1958	# Kargopol
+fixed_capital = 1958 # Cannot move capital away from this province & no power cost to move to it
+
+
+1432.1.1 = {
+	monarch = {
+		name = "Mikhail"
+		dynasty = "Vytegorsky"
+		birth_date = 1422.1.1
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+}

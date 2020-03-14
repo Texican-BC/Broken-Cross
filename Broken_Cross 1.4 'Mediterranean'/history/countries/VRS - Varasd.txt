@@ -1,0 +1,18 @@
+government = tribal
+add_government_reform = tribal_kingdom
+primary_culture = hungarian
+religion = tengri_pagan_reformed
+secondary_religion = chalcedonism
+technology_group = eastern
+capital = 152 # Varasd
+government_rank = 1
+
+1442.1.1 = {
+	monarch = {
+		name = "Ernö Rákoczy"
+		dynasty = "Hunyadi"
+		adm = 3
+		dip = 1
+		mil = 2
+	}
+}

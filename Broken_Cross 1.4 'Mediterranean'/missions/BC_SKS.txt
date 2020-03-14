@@ -1,0 +1,759 @@
+SKS_slot_1 = {
+    slot = 1                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = SKS
+		NOT = { map_setup = map_setup_random }
+    }
+    
+    # The name of the mission, used for localization
+    SKS_battle = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        position = 1        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { }
+		
+		trigger = {
+			NOT = { exists = IDS }
+		}
+		
+		effect = {
+			tafilalt_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+
+	SKS_oasis = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        position = 5        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_battle }
+        
+        provinces_to_highlight = {
+			area = tafilalt_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			tafilalt_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			ouled_nail_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hautes_plaines_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	
+	SKS_gateway = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        position = 6        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+		required_missions = { SKS_oasis }
+        
+		provinces_to_highlight = {
+			province_id = 1127
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			owns = 1127
+		}
+		
+		effect = {
+			1132 = {
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	
+	SKS_absorb = {
+        icon = mission_conquer_50_development            # The icon to use for the mission
+        position = 7        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+		required_missions = { SKS_gateway }
+        
+		provinces_to_highlight = {
+			province_id = 1132
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			owns = 1132
+		}
+		
+		effect = {
+			1124 = {
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	
+	SKS_sultan_mm = {
+        icon = mission_conquer_50_development            # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 7        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+		required_missions = { SKS_absorb }
+        
+		provinces_to_highlight = {
+			province_id = 1124
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			owns = 1124
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+		effect = {
+			add_country_modifier = {
+				name = "SKS_sultan_mm"
+				duration = 5475
+			}
+		}
+    }
+}
+
+SKS_slot_2 = {
+    slot = 2                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = SKS
+		NOT = { map_setup = map_setup_random }
+    }
+    
+    # The name of the mission, used for localization
+    SKS_hammer = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        position = 6        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_oasis }
+        
+		provinces_to_highlight = {
+			area = ouled_nail_area
+			area = tafilalt_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			ouled_nail_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hautes_plaines_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "SKS_hammered_nail"
+				duration = 5475
+			}
+		}
+    }
+	
+	SKS_settle = {
+		icon = mission_conquer_50_development          # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 7        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_hammer }
+		required_missions = { SKS_florida }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        provinces_to_highlight = {
+			OR = {
+				province_id = 149
+				province_id = 151
+				province_id = 2296
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+			owns = 151
+			owns = 149
+			owns = 2296
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+		151 = {
+				move_capital_effect = yes
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 3
+			}
+			add_country_modifier = {
+				name = "NIQ_defeated_abbasids"
+				duration = 5475
+			}
+
+			bulgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			karaman_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bulgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_core = 151
+			add_stability = 1
+		}
+    }
+	
+	SKS_khalifa = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 8        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_settle }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        provinces_to_highlight = {
+			OR = {
+				province_id = 149
+				province_id = 151
+				province_id = 2296
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+			owns = 151
+			owns = 149
+			owns = 2296
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+		151 = {
+				move_capital_effect = yes
+				add_base_tax = 4
+				add_base_production = 4
+				add_base_manpower = 3
+			}
+			add_country_modifier = {
+				name = "NIQ_defeated_abbasids"
+				duration = 5475
+			}
+
+			bulgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			karaman_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bulgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_core = 151
+			add_stability = 1
+		}
+    }
+}
+	
+SKS_slot_3 = {
+    slot = 3                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = SKS
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	SKS_build = {
+        icon = mission_establish_high_seas_navy        # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 1        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { }
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+			num_of_heavy_ship = 5 
+			num_of_light_ship = 10
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+			add_country_modifier = {
+				name = "naval_enthusiasm_mission"
+				duration = 9125 #25 years
+			}
+		}
+    }
+	
+	SKS_opportunites = {
+       icon = mission_iberian_conquistador
+		required_missions = { SKS_build }
+		trigger = {
+			any_province = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+				NOT = {
+					province_id = 1572
+				}
+				NOT = {
+					area = greenland_area
+				}
+				has_discovered = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "SKS_opportunites"
+				duration = -1
+			}
+		}
+	}
+	
+	SKS_people = {
+		icon = mission_colonial          # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 3        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_opportunites }
+		
+		trigger = {
+			any_province = {
+				OR = {
+					continent = north_america
+					continent = south_america
+				}
+				NOT = {
+					province_id = 481
+				}
+				NOT = {
+					area = greenland_area
+				}
+				is_colony = ROOT
+			}
+		}
+		effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						continent = north_america
+						continent = south_america
+					}
+					NOT = {
+						province_id = 1572
+					}
+					NOT = {
+						area = greenland_area
+					}
+					is_colony = ROOT
+				}
+				add_province_modifier = {
+					name = "sks_colonial_endeavors_effect"
+					duration = 9125
+				}
+			}
+		}
+    }
+	
+	SKS_carib = {
+        icon = mission_iberian_conquistador
+		required_missions = { SKS_people }
+		provinces_to_highlight = {
+			colonial_region = colonial_the_carribean
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_caribbean
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 1
+					colonial_region = colonial_the_carribean
+					is_city = yes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "SKS_carib"
+				duration = 7300
+			}
+			mexico_region = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	SKS_ambush = {
+        icon = mission_potosi_silver        # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 5        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_carib }
+      
+		trigger = {
+			852 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			842 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "SKS_ambush"
+				duration = -1
+			}
+		}
+    }
+	
+	SKS_florida = {
+        icon = mission_iberian_conquistador
+		required_missions = { SKS_ambush }
+		trigger = {
+			926 = {
+				country_or_non_sovereign_subject_holds
+			}
+			2535 = {
+				country_or_non_sovereign_subject_holds
+			}
+			2536 = {
+				country_or_non_sovereign_subject_holds
+			}
+		}
+		
+		effect = {
+			southeast_america_region = {
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	
+	SKS_amirs = {
+        icon = mission_potosi_silver        # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 5        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        required_missions = { SKS_florida }
+		trigger = {
+			southeast_america_region = {
+				type = all
+				is_city = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			northeast_america_region = {
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	
+	SKS_britania = {
+        icon = mission_potosi_silver        # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 5        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_amirs }
+      
+		trigger = {
+			northeast_america_region = {
+				type = all
+				is_city = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "SKS_britania"
+				duration = -1
+			}
+		}
+    }
+}
+
+SKS_slot_4 = {
+    slot = 4                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = SKS
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	SKS_cusco = {
+        icon = mission_potosi_silver
+		position = 7
+		required_missions = { SKS_florida }
+		trigger = {
+			peru_region = {
+				type = all
+				is_city = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = "SKS_cusco"
+				duration = -1
+			}
+		}
+    }
+	
+	SKS_sultan_sh = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        position = 8        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_cusco }
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+			upper_peru_region = {
+				type = all
+				is_city = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			la_plata_region = {
+				type = all
+				is_city = yes
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+			add_country_modifier = {
+				name = "SKS_sultan_sh"
+				duration = -1
+			}
+		}
+    }
+}
+
+SKS_slot_5 = {
+    slot = 5                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = SKS
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	SKS_alies = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 1        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+		required_missions = { }
+
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+			OR = {
+				alliance_with = ALJ
+				alliance_with = GRA
+				NOT = {
+					exists = GRA
+					exists = ALJ
+				}
+			}
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+			add_country_modifier = {
+				name = "SKS_alies"
+				duration = 5475
+			}
+		}
+    }
+	
+	SKS_ties = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 2        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_alies }
+        
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+			religion = Ailtazamat
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+			algiers_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	
+	SKS_ambition = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 3        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_ties }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        provinces_to_highlight = {
+			area = algiers_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			algiers_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+			tunisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+    }
+	
+	SKS_trade = {
+        icon = mission_conquer_50_development          # The icon to use for the mission
+        generic = no     # Whether this mission is considered generic.
+        position = 4        # Which row the mission appears in. 1 is top.
+        completed_by = 1455.1.1   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = { SKS_ambition }
+        
+        provinces_to_highlight = {
+			area = tunisia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tunisia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+			add_country_modifier = {
+				name = "SKS_tunis"
+				duration = 5475
+			}
+		}
+    }
+}

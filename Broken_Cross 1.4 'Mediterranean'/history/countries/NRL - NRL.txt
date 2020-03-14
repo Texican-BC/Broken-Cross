@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+primary_culture = swedish
+religion = norse_pagan_reformed
+capital = 1	#Bergslagen
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Kettil Karlsson"
+		dynasty = "Trolle"
+		birth_date = 1428.4.16
+		adm = 2
+		dip = 2
+		mil = 4
+		leader = {	name = "Kettil Karlsson"   type = general	fire = 3	shock = 2	manuever = 3	siege = 1 }
+	}
+	queen = {
+		country_of_origin = NRL
+		name = "Kristina"
+		dynasty = "Oxenstierna"
+		birth_date = 1429.1.5
+		death_date = 1471.1.1
+		female = yes
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

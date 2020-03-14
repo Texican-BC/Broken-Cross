@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = iqta
+primary_culture = faransian
+religion = sunni
+technology_group = muslim
+capital = 196	# Toulouse
+government_rank = 2
+religious_school = maliki_school
+
+1443.1.1 = {
+	monarch = {
+		name = "Muhammad VII"
+		dynasty = "Zirid"
+		adm = 3
+		dip = 2
+		mil = 1
+	}
+	add_piety = -0.3
+}

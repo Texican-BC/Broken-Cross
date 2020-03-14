@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_icon_muslim_school_ibadi"
+		texturefile = "gfx/interface/"GFX_icon_muslim_school_ibadi"
+	}
+	spriteType = {
+		name = "GFX_icon_muslim_school_ash"
+		texturefile = "gfx/interface/"GFX_icon_muslim_school_ash"
+	}
+}

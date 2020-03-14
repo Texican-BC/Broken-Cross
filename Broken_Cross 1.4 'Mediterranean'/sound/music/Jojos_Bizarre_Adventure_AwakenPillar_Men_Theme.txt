@@ -1,0 +1,25 @@
+song = {
+	name = "Jojos_Bizarre_Adventure_AwakenPillar_Men_Theme.ogg" #nameofyourmusic stands for the name of your music file. The name cannot contain special characters, like accents, comas, spaces or parenthesis. 
+
+	chance = { #Here is the "chance" for the music be played on EU4, let's use, as an example, music you want to be played more to some culture group in-game.
+		modifier = {
+			factor = 1 #0 would mean it would never be played, 1 means it'll always play to anyone, this is a must to the file, unless you want it to be exclusive to any of the examples below.
+		}
+
+		modifier = { #Music will never play to a nation whose culture isn't in the British culture group.
+			factor = 0
+			NOT = { culture_group = turko_semitic } 
+		}
+
+		modifier = { #Music will play more often for nations whose culture is in the British culture group.
+			factor = 2
+			culture_group = turko_semitic
+		}
+  
+		modifier = { #Music won't be played while at war.
+			factor = 1.5
+			is_at_war = yes
+		}
+  #End of options
+	} 
+} #Remember to check if you closed your brackets, otherwise it won't work.
