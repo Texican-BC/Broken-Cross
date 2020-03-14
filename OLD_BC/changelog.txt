@@ -1,0 +1,98 @@
+Versian 1.4 "Mongol"
+
+Version 1.3
+	+ added Qahirah, Niqyia, Vladmir, Sakisun, Danish Sword Brothers, idirsids, Galicia, and Templar Order
+	+ Yunans can form Rum, Muslim russians can form Rusyya, and Volkovy russianhs can form ruthenia, and Andalucians can form Qastany
+	+ added Rizana (Stoisism), Alitazamat ( Islamic Puratains), Avigism (Latin Reformers), and Bretlandic (Norse Christianity)
+	+ Surrender of Majrit Event chain, Shadow kindom of france, and fall of the Abbasids.
+	+ New ideas for Qastany, Qahirah, Vladmir, Ruma, Niqya and Siqly
+	+ Bogomilists in Illyria and Wallacia, Iconoclas in Greece, and Paulicians in the Caucasus
+	* Majorica is now part of Barshaluna
+	* Islands made more Islamic
+	* Tunis is now Shi'a
+	* Changed Ayyubids -> Abbasids
+	* Changed Norway -> Vestland
+	* Changed Denmark -> Geatland
+	* Changed Trondalag -> Viken
+	* Changed Norrloand -> Sivjod
+	* Changed Rodnovery -> Volkhovy
+	* Changed Ottomans -> Eertna
+	* Changed Russia -> Rusyya
+	* Changed Novgrodian -> Rusyya
+	* Changed Moscovite -> Vladmir
+	* Changed southern Eropean nations into Dhimmi tech 
+	- I've made the Bolgars bigger
+	- Nerfed HRE point gain again
+	- Cornwall is now sunni and bigger
+	- removed Tullayulla
+	- removed Sweden
+	- removed Russian minors
+
+Version 1.2.2 Patch
+	* Changed some country tags for better compatibility (suggest starting a new game)
+	* Illyria now has its own tag isntead of just being a rebranded Albania (feat. new flag!)
+	* Illyria can now for Byzantium
+	* Forming Byzantium changes your primary culture to Greek and converts all provinces of  Yunanian culture to Greek
+	* Changed "Celtia" to "Celtica"
+	* Fixed some country's ideas having papal authority with no pope available (now have tolerance of true faith)
+	* Andalusia now has access to DLC ideas again
+	* Bug fixes
+
+Version 1.2.1 Patch
+	* Updated for 1.28 Spain
+	* Changed Abbasids -> Ayyubids
+	* Changed Italiu states to be Shi'a
+	* Freed Majorca nation
+	* Hungarians are now all Tengri and tribal
+	* Gave León a starting heir
+	* Bug fixes
+
+Version 1.2.0_01
+	* Fixed León and Portugal not being historical friends
+	* Fixed problems with the archive
+
+Version 1.2 (Poland Update)
+	+ Updated to 1.27
+	+ New celtic Christianity "Insular" (uses orthodox mechanics)
+	+ New tree map (satelite/terrain view)
+	* Nerfed HRE point gain
+	* Fixes to many regions
+	* Other bug fixes
+
+Version 1.1.1_02
+	* Fixed Kingdom of Jerusalem not being formable by Chalcedonian nations
+	* Fixed the Caliphate not being given the correct claims
+
+Varsion 1.1.1_01 Patch
+	* Fixed some exploits with formable nations
+
+Version 1.1.1 Patch
+	+ New formable nations!
+		+ Caliphate (Unite Islam minus persia and some other bits). Any muslim can form.
+		+ Al-Iytalia (Italy, but muslim)
+		+ Celtia (UK, but any Celtic [Ireland, Gaeldom, Corwall, Britanny])
+		* Downgraded formable Arabia to just Arabian Peninsula and not an empire (go for the Caliphate).
+	* Fixed Ottoman core in Illyrian
+	* Fixed French core in Labourd
+	* Fixed Brandeburg core in Neumark
+	* Fixed Novgorodian core in Uts-Vym
+	* Fixed Japanese daimio only being able to convert to Catholic (now Chalcedonian)
+	* Fixed Pagans not having the option to convet to Chalcedonian
+	* Fixed not being able to form Byzantium as Chalcedonian
+	* Fixed some spelling errors
+
+Version 1.1 (Yunan Update)
+	+ Complete rework of the Balkans
+		+ Abbasids, Illyrians, Arabo-Greeks, much more!
+	+ New cultures (Yunanian, Illyrian)
+	+ New Formable Nation: Bretland (Norse England)
+	* Age of reformation now starts when colonialism is enabled
+	* Made most pagan religions easier to convert provinces from (like animism)
+	* Bulgarian is now an Altaic culture
+	* Turned Granadan ideas into "European Muslim Ideas"
+	* Ottomans nerfed
+	* Renamed Norsanglic to Bretlandic
+	* Fixed Gaeldom forming Scotland immediatly
+
+Version 1.0
+	+ Initial Release
