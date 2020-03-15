@@ -1302,36 +1302,6 @@ pagan = {
 		heretic = { OLD_SUOMENUSKO }	
 	}
 	
-	slavic_pagan_reformed = {
-		icon = 55
-		color = { 0.85 0.73 0.4 }
-		country = {
-			advisor_pool = 1
-			manpower_recovery_speed = 0.15
-		}
-		country_as_secondary = {
-			advisor_pool = 1
-			manpower_recovery_speed = 0.1
-		}
-		province = {
-			local_missionary_strength = 0.02
-		}
-		
-		on_convert = {
-			change_religion = sunni
-			add_piety = -0.5
-			add_prestige = -100	
-			add_country_modifier = {
-               			 name = "conversion_zeal"
-               			 duration = 3650
-       			 }
-		}	
-
-		uses_piety = yes
-		
-		heretic = { OLD_SLAVIC }	
-	}
-	
 	zun_pagan_reformed = {
 		icon = 43
 		color = { 0.9 1.0 0.0 }
@@ -1582,6 +1552,36 @@ muslim = {
 		heretic = { DRUZE ZAIDI }
 		
 		uses_piety = yes				# Uses piety mechanics
+	}
+
+	slavic_pagan_reformed = {
+		icon = 55
+		color = { 0.85 0.73 0.4 }
+		country = {
+			advisor_pool = 1
+			manpower_recovery_speed = 0.15
+		}
+		country_as_secondary = {
+			advisor_pool = 1
+			manpower_recovery_speed = 0.1
+		}
+		province = {
+			local_missionary_strength = 0.02
+		}
+		
+		on_convert = {
+			change_religion = sunni
+			add_piety = -0.5
+			add_prestige = -100	
+			add_country_modifier = {
+               			 name = "conversion_zeal"
+               			 duration = 3650
+       			 }
+		}	
+
+		uses_piety = yes
+		
+		heretic = { OLD_SLAVIC }	
 	}
 }
 
