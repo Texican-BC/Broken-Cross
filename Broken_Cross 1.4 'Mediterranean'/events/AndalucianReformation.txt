@@ -19,8 +19,7 @@ country_event = {
 			is_year = 1500 
 		}
 		OR = {
-			culture_group = french
-			culture_group = iberian
+			culture_group = andalucian
 		}	
 	}
 	mean_time_to_happen = {
@@ -73,8 +72,7 @@ country_event = {
 				limit = {
 					is_overseas = no
 					OR = {
-						culture_group = iberian
-						culture_group = french
+						culture_group = andalucian
 					}
 				}
 				change_religion =  Ailtazamat
@@ -97,8 +95,7 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				OR = {
-					culture_group = iberian
-					culture_group = french
+					culture_group = andalucian
 				}
 				religion = sunni
 			}
@@ -119,8 +116,7 @@ country_event = {
 			limit = {
 				is_overseas = no
 				OR = {
-					culture_group = iberian
-					culture_group = french
+					culture_group = andalucian
 				}
 				religion = sunni
 			}
