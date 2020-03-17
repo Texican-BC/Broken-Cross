@@ -197,12 +197,17 @@ MOE_slot_5 = {
 		icon = mission_assemble_an_army
 		position = 3
 		required_missions = { }
-		trigger = { army_size = 40 }
-		effect = {
-			add_country_modifier = {
-				name = "army_enthusiasm"
-				duration = 9125 #25 years
+		provinces_to_highlight = {
+			area = morea_area
+		}
+		trigger = {
+			morea_area = {
+				fort_level = 6
 			}
+		}
+		add_country_modifier = {
+				name = "SKS_sultan_mm"
+				duration = 5475
 		}
 	}
 	
@@ -210,12 +215,21 @@ MOE_slot_5 = {
 		icon = mission_assemble_an_army
 		position = 4
 		required_missions = { MOE_peloponese }
-		trigger = { army_size = 40 }
-		effect = {
-			add_country_modifier = {
-				name = "army_enthusiasm"
-				duration = 9125 #25 years
+		provinces_to_highlight = {
+			area = albania_area
+		}
+		trigger = {
+			albania_area = {
+				type = all
+				religion = ROOT
+				OR = {
+					culture = ROOT
+				}
 			}
+		}
+		add_country_modifier = {
+				name = "SKS_sultan_mm"
+				duration = 5475
 		}
 	}
 	
@@ -223,12 +237,20 @@ MOE_slot_5 = {
 		icon = mission_assemble_an_army
 		position = 5
 		required_missions = { MOE_gnostics }
-		trigger = { army_size = 40 }
-		effect = {
-			add_country_modifier = {
-				name = "army_enthusiasm"
-				duration = 9125 #25 years
+		provinces_to_highlight = {
+			province_id = 151
+		}
+		trigger = {
+			151 = {
+				owned_by = ROOT
+				OR = {
+					religion = ROOT
+				}
 			}
+		}
+		add_country_modifier = {
+				name = "SKS_sultan_mm"
+				duration = 5475
 		}
 	}
 	
@@ -236,12 +258,21 @@ MOE_slot_5 = {
 		icon = mission_assemble_an_army
 		position = 6
 		required_missions = { MOE_patriarch }
-		trigger = { army_size = 40 }
-		effect = {
-			add_country_modifier = {
-				name = "army_enthusiasm"
-				duration = 9125 #25 years
+		provinces_to_highlight = {
+			area = aydin_area
+		}
+		trigger = {
+			aydin_area = {
+				type = all
+				religion = ROOT
+				OR = {
+					culture = ROOT
+				}
 			}
+		}
+		add_country_modifier = {
+				name = "SKS_sultan_mm"
+				duration = 5475
 		}
 	}
 }
