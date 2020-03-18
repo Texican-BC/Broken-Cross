@@ -1,4 +1,4 @@
-wLAT_slot_1 = {
+LAT_slot_1 = {
     slot = 1                    # Which column the missions will appear in. 1 to 5.
     generic = no             # Whether missions within this series are considered generic.
     ai = yes          # Whether the AI will claim missions in this series.
@@ -149,7 +149,7 @@ wLAT_slot_1 = {
 	LAT_france = {
 		icon = mission_assemble_an_army
 		position = 5
-		required_missions = { LAT_france }
+		required_missions = { LAT_occitainia }
 		provinces_to_highlight = {
 			area = france_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
