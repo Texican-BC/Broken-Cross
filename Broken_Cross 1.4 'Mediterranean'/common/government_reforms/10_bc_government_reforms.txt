@@ -1,8 +1,7 @@
 leonese_cortes = {
-	icon = "british_queen"
+	icon = "parliament_hall"
 	legacy_equivalent = leonese_cortes_legacy
 	allow_normal_conversion = no
-	basic_reform = yes
 	potential = {
         AND = {
         	tag = LON
@@ -22,7 +21,7 @@ leonese_cortes = {
 }
 
 lombard_monarchy = {
-	icon = "states_general"
+	icon = "ambrosian_republic"
     potential = {
         culture_group = latin
 		NOT = { primary_culture = sicilian }
