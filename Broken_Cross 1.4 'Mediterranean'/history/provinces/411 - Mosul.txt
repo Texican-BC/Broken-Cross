@@ -1,7 +1,7 @@
 #411 - Mosul
 
-owner = QAR
-controller = QAR
+owner = IRQ
+controller = IRQ
 culture = kurdish
 religion = sunni
 capital = "Al Mawsil"
@@ -16,7 +16,8 @@ add_core = IRQ
 add_core = QAR
 add_core = BHT
 discovered_by = east_african
-discovered_by = Dhimmi discovered_by = muslim
+discovered_by = Dhimmi 
+discovered_by = muslim
 discovered_by = indian
 discovered_by = ottoman
 discovered_by = eastern

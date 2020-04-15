@@ -1,7 +1,7 @@
 #2308 - Urfa
 
-owner = QAR
-controller = QAR
+owner = IRQ
+controller = IRQ
 culture = turkish
 religion = sunni
 capital = "Urfa"

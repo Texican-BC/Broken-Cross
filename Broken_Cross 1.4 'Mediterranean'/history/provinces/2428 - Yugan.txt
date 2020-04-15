@@ -1,7 +1,7 @@
 #2428 - Yugan
 
-owner = SHY
-controller = SHY
+owner = SIB
+controller = SIB
 add_core = SIB
 add_core = SHY
 culture = ostyaki

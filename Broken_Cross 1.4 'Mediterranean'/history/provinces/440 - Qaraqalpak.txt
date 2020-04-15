@@ -1,7 +1,7 @@
 #440 - Qaraqalpak
 
-owner = SHY
-controller = SHY
+owner = TRS
+controller = TRS
 culture = uzbehk
 religion = sunni
 capital = "Chimbay"

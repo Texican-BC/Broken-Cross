@@ -1,7 +1,7 @@
 #419 - Yerevan
 
-owner = TIM
-controller = TIM
+owner = ARM
+controller = ARM
 culture = armenian
 religion = coptic
 capital = "Yerevan"
@@ -11,7 +11,7 @@ base_tax = 4
 base_production = 4
 base_manpower = 3
 is_city = yes
-add_core = TIM
+add_core = QAR
 add_core = ARM 
 discovered_by = east_african
 discovered_by = western
@@ -23,13 +23,6 @@ fort_15th = yes
 extra_cost = 8
 center_of_trade = 1
 
-1402.1.1 = {
-	owner = QAR
-	controller = QAR
-	add_core = QAR
-	remove_core = TIM
-} 
-1435.1.1 = { unrest = 10 } 
 1453.1.1 = { unrest = 0 }
 1453.1.1 = { discovered_by = western }
 1468.1.1 = {

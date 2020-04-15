@@ -1,7 +1,7 @@
 #4689 - Om
 
-owner = SHY
-controller = SHY
+owner = SIB
+controller = SIB
 culture = siberian
 religion = sunni
 capital = "Om"
@@ -12,7 +12,7 @@ base_production = 3
 base_manpower = 2
 is_city = yes
 add_core = SIB
-add_core = SHY
+add_core = SIB
 discovered_by = nomad_group
 revolt_risk = 15
 
