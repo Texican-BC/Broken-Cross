@@ -312,3 +312,11 @@ vassal = {
 	start_date = 1444.1.1
 	end_date = 1806.1.1
 }
+
+# Georgia Yerevan
+vassal = {
+	first = GEO
+	second = ARM
+	start_date = 1444.1.1
+	end_date = 1806.1.1
+}
