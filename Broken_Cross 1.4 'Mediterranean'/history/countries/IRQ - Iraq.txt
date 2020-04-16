@@ -1,7 +1,17 @@
 government = monarchy
 add_government_reform = iqta
-primary_culture = al_iraqiya_arabic
-religion = shiite
+primary_culture = bedouin_arabic
+religion = sunni
 technology_group = muslim
 capital = 410	# Bagdad
-religious_school = jafari_school
+religious_school = shafii_school
+
+1425.1.1 = { 
+	monarch = { 
+		name = "Hakim" 
+		dynasty = "Safavid"
+		dip = 5 
+		adm = 4
+		mil = 2
+	}
+}

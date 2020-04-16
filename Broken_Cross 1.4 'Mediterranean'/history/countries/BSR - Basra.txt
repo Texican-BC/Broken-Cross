@@ -1,22 +1,22 @@
 government = monarchy
 add_government_reform = iqta
 primary_culture = al_iraqiya_arabic
-religion = shiite
+religion = sunni
 technology_group = muslim
 capital = 408	# Basra
 government_rank = 1
 
-1534.1.1 = {
+1444.1.1 = {
 	monarch = {
-		name = "Rashid"
-		dynasty = "al-Mughamis"
+		name = "Faruq"
+		dynasty = "al-Hasanid"
 		adm = 2
 		dip = 2
 		mil = 2
 	}
 }
 
-1546.1.1 = {
+1446.1.1 = {
 	monarch = {
 		name = "Ali Pasha"
 		dynasty = "al-Mughamis" 

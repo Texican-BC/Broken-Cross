@@ -6,7 +6,7 @@ technology_group = nomad_group
 capital = 1075	# Chimgi-Tura
 religious_school = hanafi_school
 
-1468.1.1 = {
+1444.1.1 = {
 	monarch = {
 		name = "Ibak"
 		dynasty = "Shaybanid"
