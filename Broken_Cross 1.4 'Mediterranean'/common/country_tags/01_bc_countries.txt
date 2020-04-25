@@ -20,9 +20,11 @@ EAN = "countries/EastAnglia.txt"
 SSX = "countries/Sussex.txt"
 BRD = "countries/Bretland.txt"
 BRL = "countries/Celtica.txt"
+NSX = "countries/NewSaxony.txt"
 
 #Eastern Europe
 TUP = "countries/Minsk.txt"
+YER = "countries/Yerevan.txt"
 
 #France
 STG	= "countries/Saintonge.txt"
