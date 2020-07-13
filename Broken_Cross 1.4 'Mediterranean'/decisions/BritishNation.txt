@@ -15,6 +15,7 @@ country_decisions = {
 			NOT = { tag = HLR }
 			OR = {
 				primary_culture = english
+				primary_culture = norman
 			}
 			OR = {
 				ai = no
@@ -37,8 +38,8 @@ country_decisions = {
 				province_id = 236		# London
 				province_id = 237		# Oxfordshire
 				province_id = 234		# Wessex
-				province_id = 248		# Lothian
-				province_id = 251		# Aberdeen
+				province_id = 168		# Cean
+				province_id = 233		# Exeder
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -53,8 +54,8 @@ country_decisions = {
 			owns_core_province = 236		# London
 			owns_core_province = 237		# Oxfordshire
 			owns_core_province = 234		# Wessex
-			owns_core_province = 248		# Lothian
-			owns_core_province = 251		# Aberdeen
+			owns_core_province = 168		# Cean
+			owns_core_province = 233		# Exeder
 		}
 		effect = {
 			236 = {
