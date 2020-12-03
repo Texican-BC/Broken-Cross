@@ -1,7 +1,7 @@
 #149 - Edirne
 
-owner = HSN
-controller = HSN
+owner = TRQ
+controller = TRQ
 culture = yunanian
 religion = sunni
 capital = "Edirne"
@@ -11,8 +11,7 @@ base_tax = 7
 base_production = 7
 base_manpower = 2
 is_city = yes
-fort_15th = yes #Fortress of Gallipoli
-add_core = HSN
+add_core = TRQ
 discovered_by = western
 discovered_by = eastern
 discovered_by = Dhimmi discovered_by = muslim

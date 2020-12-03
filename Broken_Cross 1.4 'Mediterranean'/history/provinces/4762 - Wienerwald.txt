@@ -1,16 +1,15 @@
-#134 - Wien
+#4762 - Wienerwald 
 
 owner = STY
 controller = STY
 add_core = STY
 culture = austrian
 religion = chalcedonism
-base_tax = 7 
-base_production = 7
-trade_goods = wine 
-base_manpower = 7
-fort_15th = yes #Vienna + Outer ring of fortifications
-capital = "Wien" 
+base_tax = 3
+base_production = 3
+trade_goods = wine
+base_manpower = 3
+capital = "Sankt Pölten" 
 is_city = yes
 hre = yes
 discovered_by = KAZ
@@ -20,12 +19,8 @@ discovered_by = AST
 discovered_by = QAS
 discovered_by = western
 discovered_by = eastern
-discovered_by = Dhimmi discovered_by = muslim
+discovered_by = muslim
 discovered_by = ottoman
-extra_cost = 16
-center_of_trade = 2
 
-1545.1.1 = { base_manpower = 3 }
-1650.1.1 = { base_manpower = 4 }
-1700.1.1 = { base_manpower = 6 }
+
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

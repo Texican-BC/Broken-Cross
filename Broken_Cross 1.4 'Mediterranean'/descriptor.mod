@@ -1,13 +1,6 @@
-name="Broken Cross"
-path="C:/Users/tcist/Documents/Paradox Interactive/Europa Universalis IV/mod/Broken_Cross"
-replace_path="common/bookmarks"
+version="1.4"
 tags={
 	"Alternative History"
-	"New Nations"
-	"Events"
-	"Missions And Decisions"
-	"Religion"
 }
-picture="Broken_Cross.png"
-supported_version="1.29.*.*"
-remote_file_id="1435827296"
+name="BC_devbuild"
+supported_version="1.30.3"

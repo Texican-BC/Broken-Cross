@@ -1,0 +1,20 @@
+#4732 - Terracina
+
+owner = RMA
+controller = RMA
+culture = umbrian 
+religion = shiite
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = fish
+base_manpower = 1		# Pontine Marshes
+capital = "Terracina"
+is_city = yes
+add_core = RMA
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+

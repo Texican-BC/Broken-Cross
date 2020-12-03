@@ -1,7 +1,7 @@
 #148 - Macedonia
 
-owner = TRQ
-controller = TRQ
+owner = ILY
+controller = ILY
 culture = yunanian
 religion = sunni
 capital = "Thessaloniki"
@@ -13,7 +13,7 @@ base_manpower = 2
 is_city = yes
 fort_15th = yes
 estate = estate_dhimmi
-add_core = TRQ
+add_core = ILY
 discovered_by = western
 discovered_by = eastern
 discovered_by = Dhimmi discovered_by = muslim

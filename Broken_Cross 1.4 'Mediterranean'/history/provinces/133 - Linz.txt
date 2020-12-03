@@ -1,8 +1,8 @@
 #133 - Linz
 
-owner = SLZ
-controller = SLZ
-add_core = SLZ
+owner = BOH
+controller = BOH
+add_core = BOH
 culture = austrian
 religion = chalcedonism
 base_tax = 5 
