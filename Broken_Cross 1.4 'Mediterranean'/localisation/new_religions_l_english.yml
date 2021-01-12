@@ -213,7 +213,7 @@
  finnish_pagan_reformed_rebels_army: "$RELIGION$ Army"
  #
  slavic_pagan_reformed: "Volkhvyia"
- slavic_pagan_reformed_religion_desc: "To appease the sultanates and prevent them from taking land Vladimir claimed to be a preacher and leader to unite the Slavs. He makes his religion Abrahamic but it is very ethnocentric and theologically different. They can be comparable to yazidis. The former Slavic gods are reworked into volky’s angels and demigods, but they have a supreme being(Allah). Volhky also incorporates Sainthood, though it is different from Christianity. "
+ slavic_pagan_reformed_religion_desc: "Volhkyana is a religion derived from Islam created by Vladimir the great to protect his region from Islamic invasions. His religion’s foundations are Islamic with similar beliefs and practices but still holds many traditions from slavic paganism."
  OLD_SLAVIC: "Rodnovery"
  slavic_pagan_reformed_rebels_demand: "Convert $COUNTRYNAME$"
  slavic_pagan_reformed_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
@@ -323,7 +323,7 @@
  celtic_pagan_rebels_army: "$RELIGION$ Army"
  #
  Rizana: "Rizana"
- Rizana_religion_desc: "Begining as a Hellenic revival of sorts in Muslim Greece and Asia Minor in the early 16th century, Rizana is a Stoic branch of Islam which put emphasis on logic and study of the natural world. Through rigorous study of ethics, philosophy and the natural sciences, one can achieve peace with Allah, the creator of all things."
+ Rizana_religion_desc: "The rizana sect stated as the Greek Sufi order which lived in the moutaians of the balkans and Anatolia. The orders started to adopt heterodox and messianic beliefs like transmigration of the soul. These orders unified and started to preach into the Islamic world. "
  Rizana_rebels_demand: "Convert $COUNTRYNAME$"
  Rizana_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  Rizana_rebels_title: "Religious"
@@ -332,7 +332,7 @@
  Rizana_rebels_army: "$RELIGION$ Army"
  #
  Ailtazamat: "Ailtazamat"
- Ailtazamat_religion_desc: "Born out of religious strife in Andalusia, Ailtazamites seek to reform the faith through hard work and deeper spirituality. They share many beliefs with Kharijites and Salafis."
+ Ailtazamat_religion_desc: "The Alitazamat religion started as a derivative of the Muʿtazila school of Islam which grew in popularity in Iberia. These schools started to reinterpret and rewrite the Quran and Hadiths to fit their theology. They broke off from the sunnis and established their own religious authority."
  Ailtazamat_rebels_demand: "Convert $COUNTRYNAME$"
  Ailtazamat_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  Ailtazamat_rebels_title: "Religious"
