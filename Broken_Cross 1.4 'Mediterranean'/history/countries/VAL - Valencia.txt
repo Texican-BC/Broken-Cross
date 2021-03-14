@@ -2,7 +2,7 @@ government = monarchy
 
 add_government_reform = feudalism_reform
 
-religion = catholic
+religion = chalcedonism
 primary_culture = catalan
 technology_group = western
 capital = 220	# Valencia

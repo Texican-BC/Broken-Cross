@@ -1,5 +1,5 @@
-owner = WUR
-controller = WUR
+owner = SWA
+controller = SWA
 capital = "Reutlingen"
 is_city = yes
 culture = swabian
@@ -9,11 +9,11 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 trade_goods = grain
-add_core = WUR
+add_core = SWA
 
 discovered_by = eastern
 discovered_by = western
-discovered_by = muslim
+discovered_by = muslim discovered_by = Dhimmi
 discovered_by = ottoman
 
 1519.1.1 = { 
@@ -24,8 +24,8 @@ discovered_by = ottoman
 } # After attacking the free town of Reutlingen the Duke of Würtemberg is sent fleeing and the country governed by the Austrians.
 1534.1.1 = { 
 	unrest = 0 
-	owner = WUR
-	controller = WUR
+	owner = SWA
+	controller = SWA
 	religion = protestant 
 } # House Würtemberg reconquers the coutnry and installs the protestant religion
 1724.1.1 = { capital = "Ludwigsburg" }

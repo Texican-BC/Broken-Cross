@@ -7,14 +7,15 @@ is_city = yes
 capital = "Lille"
 culture = wallonian
 religion = chalcedonism
-hre = no
+hre = yes
 base_tax = 4
 base_production = 5
 trade_goods = cloth
 base_manpower = 2
 discovered_by = eastern
 discovered_by = western
-discovered_by = muslim
+discovered_by = muslim 
+discovered_by = Dhimmi
 discovered_by = ottoman
 fort_15th = yes
 

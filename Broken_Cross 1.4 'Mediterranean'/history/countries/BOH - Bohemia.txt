@@ -29,11 +29,12 @@ add_army_professionalism = 0.1
 
 1439.10.27 = {
 	monarch = {
-		name = "Landfriedens"
-		regent = yes
-		adm = 2
-		dip = 2
-		mil = 2
+		name = "Vávilém II"
+		dynasty = "Premyslid"
+		birth_date = 1351.2.26
+		adm = 3
+		dip = 0
+		mil = 0
 	}
 }
 

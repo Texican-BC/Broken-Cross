@@ -13,7 +13,7 @@ add_core = ROT
 
 discovered_by = eastern
 discovered_by = western
-discovered_by = muslim
+discovered_by = muslim discovered_by = Dhimmi
 discovered_by = ottoman
 
 #Reichsdeputationshauptschluss

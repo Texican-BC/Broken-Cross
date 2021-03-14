@@ -1,8 +1,8 @@
 #1757 - Oberpfalz
 
-owner = WUR
-controller = WUR
-add_core = WUR
+owner = SWA
+controller = SWA
+add_core = SWA
 culture = bavarian
 religion = chalcedonism
 base_tax = 4

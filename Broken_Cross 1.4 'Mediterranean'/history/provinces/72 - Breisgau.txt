@@ -1,8 +1,8 @@
 #72 - Breisgau
 
-owner = WUR
-controller = WUR
-add_core = WUR
+owner = SWA
+controller = SWA
+add_core = SWA
 culture = swabian
 religion = chalcedonism
 base_tax = 2 

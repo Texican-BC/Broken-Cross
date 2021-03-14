@@ -1,6 +1,34 @@
 government = monarchy
 add_government_reform = feudalism_reform
 technology_group = western
-religion = catholic
+religion = chalcedonism
 primary_culture = swabian
-capital = 1872	# Ulm
+capital = 70	# Ulm
+
+1419.7.2 = {
+	monarch = {
+		name = "Ulrich V"
+		dynasty = "von Hohenstaufen"
+		birth_date = 1413.1.1
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = benevolent_personality
+	add_ruler_personality = kind_hearted_personality
+}
+
+1447.2.1 = {
+	heir = {
+		name = "Eberhard"
+		monarch_name = "Eberhard I"
+		dynasty = "von Hohenstaufen"
+		birth_date = 1447.2.1
+		death_date = 1504.2.17
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}

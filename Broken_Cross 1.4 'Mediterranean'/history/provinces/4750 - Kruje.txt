@@ -3,7 +3,7 @@
 owner = ILY
 controller = ILY
 culture = illyrian
-religion = sunni
+religion = bogomilist
 capital = "Krujë"
 trade_goods = wool
 hre = no
@@ -18,7 +18,7 @@ discovered_by = CRI
 discovered_by = GOL
 discovered_by = AST
 discovered_by = QAS
-discovered_by = muslim
+discovered_by = muslim discovered_by = Dhimmi
 discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western

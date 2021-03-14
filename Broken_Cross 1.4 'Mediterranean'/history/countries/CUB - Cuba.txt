@@ -1,0 +1,5 @@
+government = republic
+technology_group = western
+primary_culture = castillian
+religion = chalcedonism
+capital = 484

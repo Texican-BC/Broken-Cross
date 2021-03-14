@@ -1,5 +1,5 @@
-owner = WUR
-controller = WUR
+owner = SWA
+controller = SWA
 capital = "Durlach"
 is_city = yes
 culture = swabian
@@ -9,11 +9,11 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 trade_goods = wine
-add_core = WUR
+add_core = SWA
 
 discovered_by = eastern
 discovered_by = western
-discovered_by = muslim
+discovered_by = muslim discovered_by = Dhimmi
 discovered_by = ottoman
 
 1715.6.1 = {

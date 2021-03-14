@@ -1,7 +1,7 @@
 # 1872 - Ulm
-owner = WUR
-controller = WUR
-add_core = WUR
+owner = SWA
+controller = SWA
+add_core = SWA
 culture = swabian
 religion = chalcedonism
 base_tax = 7 
@@ -19,8 +19,8 @@ extra_cost = 8
 center_of_trade = 1
 
 1803.1.1 = {
-	add_core = WUR
-	owner = WUR
-	controller = WUR
+	add_core = SWA
+	owner = SWA
+	controller = SWA
 }
 1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

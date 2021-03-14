@@ -1,8 +1,8 @@
 #74 - Baden
 
-owner = WUR
-controller = WUR
-add_core = WUR
+owner = SWA
+controller = SWA
+add_core = SWA
 capital = "Baden"
 trade_goods = wine
 religion = chalcedonism
