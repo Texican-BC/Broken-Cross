@@ -3,11 +3,11 @@ add_government_reform = feudalism_reform
 technology_group = western
 religion = chalcedonism
 primary_culture = swabian
-capital = 70	# Ulm
+capital = 70	# Stuttgart
 
 1419.7.2 = {
 	monarch = {
-		name = "Ulrich V"
+		name = "Karl"
 		dynasty = "von Hohenstaufen"
 		birth_date = 1413.1.1
 		adm = 3

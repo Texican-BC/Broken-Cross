@@ -1570,14 +1570,8 @@ muslim = {
 			local_missionary_strength = 0.02
 		}
 		
-		allowed_conversion = {
-           		 sunni
-           	 	 shitte
-           		 Ibadi
-        	}
-		
 		on_convert = {
-			change_religion = slavic_pagan_reformed
+			change_religion = sunni
 			add_piety = -0.5
 			add_prestige = -100	
 			add_country_modifier = {
