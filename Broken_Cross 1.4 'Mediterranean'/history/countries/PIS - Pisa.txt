@@ -4,11 +4,11 @@ government_rank = 1
 mercantilism = 25
 primary_culture = tuscan
 religion = chalcedonism
-technology_group = western
+technology_group = Dhimmi
 capital = 115	# Pisa
 fixed_capital = 115 # Cannot move capital away from this province & no power cost to move to it
 
-1494.1.1 = {
+1444.1.1 = {
 	monarch = {
 		name = "Simone Orlandi"
 		adm = 2
