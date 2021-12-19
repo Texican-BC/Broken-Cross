@@ -8,6 +8,7 @@ hre = no
 base_tax = 5
 base_production = 5
 base_manpower = 2
+is_city = yes
 owner = MNA
 controller = MNA
 add_core = MNA
@@ -23,7 +24,6 @@ center_of_trade = 2
 	owner = SPA
 	controller = SPA
 	add_core = SPA
-	is_city = yes
 	trade_goods = spices
 	add_to_trade_company = SPA
 	add_trade_company_investment = {
@@ -64,7 +64,7 @@ center_of_trade = 2
 	controller = SPA
 }
 1599.1.1 = {
-	religion = chalcedonism
+	religion = catholic
 }
 1762.10.6 = {
 	controller = GBR

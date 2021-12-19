@@ -25,7 +25,7 @@ center_of_trade = 2
 	owner = SPA
 	controller = SPA
 	add_core = SPA 
-	religion = chalcedonism
+	religion = catholic
 }
 1762.10.6 = {
 	controller = GBR

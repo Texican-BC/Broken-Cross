@@ -1,15 +1,15 @@
 #627 - Blambangan
 
-owner = MAJ
-controller = MAJ
-add_core = MAJ
+owner = BLM
+controller = BLM
+add_core = BLM
 culture = javanese
 religion = hinduism
 capital = "Blambangan"
 trade_goods = cotton
 hre = no
-base_tax = 5
-base_production = 5
+base_tax = 4
+base_production = 4
 base_manpower = 3
 is_city = yes
 
@@ -17,7 +17,7 @@ is_city = yes
 
 discovered_by = chinese
 discovered_by = indian
-discovered_by = Dhimmi 
+discovered_by = Dhimmi
 discovered_by = muslim
 discovered_by = ottoman
 

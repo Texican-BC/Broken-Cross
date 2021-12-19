@@ -1,6 +1,6 @@
 #574 - The Andamans (and Nicobars)
 
-culture = bengali
+culture = filipino #closest we can get without making a new culture
 religion = animism
 capital = "The Andamans"
 trade_goods = unknown

@@ -18,7 +18,7 @@ discovered_by = chinese
 1565.1.1 = {
 	owner = SPA
 	controller = SPA
-	religion = chalcedonism
+	religion = catholic
 	add_core = SPA
 }
 1762.10.6 = {

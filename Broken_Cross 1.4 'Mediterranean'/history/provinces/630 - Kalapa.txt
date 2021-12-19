@@ -3,7 +3,7 @@
 owner = SUN
 controller = SUN
 add_core = SUN
-culture = javanese
+culture = sundanese
 religion = hinduism
 capital = "Kalapa"
 trade_goods = spices
@@ -14,7 +14,7 @@ base_manpower = 2
 is_city = yes
 discovered_by = chinese
 discovered_by = indian
-discovered_by = Dhimmi 
+discovered_by = Dhimmi
 discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 16

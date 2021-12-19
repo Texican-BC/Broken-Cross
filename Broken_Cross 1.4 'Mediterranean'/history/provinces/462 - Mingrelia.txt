@@ -1,6 +1,6 @@
 #462 - Mingrelia
 
-owner = IGEO
+owner = GEO
 controller = GEO
 culture = georgian
 religion = paulician
