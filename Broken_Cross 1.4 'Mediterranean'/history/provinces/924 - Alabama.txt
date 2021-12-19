@@ -24,7 +24,7 @@ discovered_by = north_american
 	add_core = FRA
 	culture = cosmopolitan_french
 	trade_goods = cotton
-	religion = chalcedonism
+	religion = catholic
 	is_city = yes
 } #Fort Toulouse
 1763.2.10 = {

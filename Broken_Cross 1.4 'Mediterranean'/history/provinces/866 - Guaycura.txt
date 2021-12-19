@@ -24,7 +24,7 @@ discovered_by = north_american
 	add_core = SPA
 	capital = "La Paz"
 	culture = castillian
-	religion = chalcedonism
+	religion = catholic
 	is_city = yes
 	trade_goods = fish 
 } # Hernán Cortés claimed the peninsula & founded the city
@@ -46,7 +46,7 @@ discovered_by = north_american
 	is_city = yes
 	trade_goods = fish 
 	culture = castillian
-	religion = chalcedonism
+	religion = catholic
 } #First Spanish mission on the peninsula, Loreto
 1768.2.3 = { unrest = 4 } # The Jesuits are expelled 
 1769.1.1 = { unrest = 0 } 

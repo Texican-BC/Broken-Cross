@@ -1,6 +1,6 @@
 #922 - Mobile
 
-culture = creek
+culture = choctaw
 religion = totemism
 capital = "Mobile"
 trade_goods = unknown
@@ -24,7 +24,7 @@ discovered_by = north_american
 	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
-	religion = chalcedonism
+	religion = catholic
 	trade_goods = cotton
 } # Founding of Mobile
 1756.5.16 = { controller = GBR } # Occupied by the British

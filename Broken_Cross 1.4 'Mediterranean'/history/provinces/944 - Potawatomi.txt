@@ -1,9 +1,10 @@
 #944 - Potawatomi
 
-add_core = POT
-owner = POT
-controller = POT
-culture = anishinabe
+
+add_core = FOX
+owner = FOX
+controller = FOX
+culture = mesquakie
 religion = totemism
 capital = "Potawatomi"
 trade_goods = fur
@@ -32,7 +33,7 @@ center_of_trade = 2
 	add_core = FRA
 	remove_core = IRO
 	culture = cosmopolitan_french
-	religion = chalcedonism
+	religion = catholic
 } # Great Peace of Montreal and Fort Detroit
 1707.5.12 = { discovered_by = GBR }
 1763.2.10 = {

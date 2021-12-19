@@ -27,7 +27,7 @@ discovered_by = north_american
 	controller = SPA
 	add_core = SPA
 	remove_core = PIM
-	religion = chalcedonism
+	religion = catholic
 	culture = castillian
 } # First permanent Spanish settlers
 1751.1.1 = { unrest = 5 }

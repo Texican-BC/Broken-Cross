@@ -1,6 +1,6 @@
 #981 - Taqamkuk
 
-culture = cree
+culture = innu
 religion = totemism
 capital = "Taqamkuk"
 trade_goods = unknown
@@ -28,7 +28,7 @@ discovered_by = north_american
 	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
-	religion = chalcedonism
+	religion = catholic
 	trade_goods = fish
 } # French fishermen dominate the southern coast and northern peninsula
 1645.1.1 = { add_core = FRA }

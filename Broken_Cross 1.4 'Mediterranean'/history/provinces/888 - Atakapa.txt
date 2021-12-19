@@ -23,7 +23,7 @@ discovered_by = north_american
 	is_city = yes
 	culture = castillian
 	capital = "Los Adaes"
-	religion = chalcedonism
+	religion = catholic
 	trade_goods = sugar
 } # Spanish missions
 1810.9.16 = { owner = MEX add_core = MEX controller = SPA } # Mexican War of Independence

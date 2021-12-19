@@ -25,7 +25,7 @@ discovered_by = north_american
 	add_core = SPA
 	is_city = yes
 	culture = castillian
-	religion = chalcedonism
+	religion = catholic
 	trade_goods = fish
 } # First real settlements
 1810.9.16 = {

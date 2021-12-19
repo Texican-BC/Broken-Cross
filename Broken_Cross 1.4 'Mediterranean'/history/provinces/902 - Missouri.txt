@@ -1,6 +1,6 @@
 #902 - Missouri
 
-culture = chiwere
+culture = pawnee
 religion = totemism
 capital = "Missouri"
 trade_goods = unknown
@@ -23,7 +23,7 @@ discovered_by = north_american
 	controller = FRA
 	add_core = FRA
 	culture = cosmopolitan_french
-	religion = chalcedonism
+	religion = catholic
 	is_city = yes
 } # Construction of Fort Cavagnal
 1762.1.1 = {

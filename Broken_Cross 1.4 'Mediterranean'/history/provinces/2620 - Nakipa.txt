@@ -24,7 +24,7 @@ discovered_by = north_american
 	add_core = SPA
 	is_city = yes
 	culture = castillian
-	religion = chalcedonism	
+	religion = catholic	
 	trade_goods = grain
 } # Missionaries arrived
 1775.1.1 = { unrest = 4 } # The natives rebelled

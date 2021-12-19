@@ -23,7 +23,7 @@ discovered_by = north_american
 	controller = SPA
 	add_core = SPA
 	is_city = yes
-	religion = chalcedonism
+	religion = catholic
 	trade_goods = cotton
 	culture = castillian 
 } #Los Adaes Mission

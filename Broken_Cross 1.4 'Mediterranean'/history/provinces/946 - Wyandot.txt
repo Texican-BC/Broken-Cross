@@ -1,6 +1,6 @@
 #946 - Wyandot
 
-culture = huron
+culture = miami
 religion = totemism
 capital = "Wyandot"
 trade_goods = unknown
@@ -16,7 +16,7 @@ native_hostileness = 4
 
 discovered_by = north_american
 
-
+1444.1.1 = { tribal_owner = FOX }
 1650.1.1 = {
  	owner = HUR
 	controller = HUR
@@ -45,7 +45,7 @@ discovered_by = north_american
 	add_core = FRA
 	culture = cosmopolitan_french
 	is_city = yes
-	religion = chalcedonism
+	religion = catholic
 	trade_goods = fur
 } # French occupy northern Ohio
 1763.2.10 = {

@@ -23,7 +23,7 @@ discovered_by = north_american
 	controller = FRA
 	add_core = FRA
 	culture = cosmopolitan_french
-	religion = chalcedonism
+	religion = catholic
 	is_city = yes
 	trade_goods = cotton
 } # Pierre Le Moyne d'lberville

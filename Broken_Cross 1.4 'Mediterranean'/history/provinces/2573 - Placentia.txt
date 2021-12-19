@@ -1,6 +1,6 @@
 #2573 - Placientia
 
-culture = cree
+culture = innu
 religion = totemism
 capital = "Placentia"
 trade_goods = unknown
@@ -28,7 +28,7 @@ discovered_by = north_american
 	add_core = FRA
 	is_city = yes
 	culture = cosmopolitan_french
-	religion = chalcedonism
+	religion = catholic
 	trade_goods = fish
 } # French fishermen dominate the southern coast and northern peninsula
 1655.1.1 = { capital = "Plaisance" } #Actually in Beothuk, but was the French capital, so in the French province

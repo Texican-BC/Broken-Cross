@@ -1,6 +1,6 @@
 #1010 - Manitoba
 
-culture = cree
+culture = chipewyan
 religion = totemism
 capital = "Manitoba"
 trade_goods = unknown
@@ -24,7 +24,7 @@ discovered_by = north_american
 	controller = FRA
 	add_core = FRA
 	culture = cosmopolitan_french
-	religion = chalcedonism
+	religion = catholic
 	capital = "Fort Dauphin"
 	is_city = yes
 }

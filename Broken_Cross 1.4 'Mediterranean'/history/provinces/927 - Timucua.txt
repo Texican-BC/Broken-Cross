@@ -1,6 +1,6 @@
 #927 - Timucua
 
-culture = creek
+culture = yamasee
 religion = totemism
 capital = "Timucua"
 trade_goods = unknown
@@ -23,7 +23,7 @@ discovered_by = north_american
 	controller = FRA
 	add_core = FRA
 	culture = cosmopolitan_french
-	religion = chalcedonism
+	religion = catholic
 	is_city = yes
 	capital = "Fort Caroline"
 	trade_goods = sugar
