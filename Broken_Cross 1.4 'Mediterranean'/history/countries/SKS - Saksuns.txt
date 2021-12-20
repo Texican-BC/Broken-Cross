@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = iqta
-primary_culture = andalucian
+primary_culture = saksun
 religion = sunni
-add_accepted_culture = saksun
+add_accepted_culture = andalucian
 technology_group = muslim
 capital = 348 # Sus
 religious_school = maliki_school
