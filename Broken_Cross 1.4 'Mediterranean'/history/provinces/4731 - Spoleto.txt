@@ -2,7 +2,7 @@
 
 owner = RMA
 controller = RMA
-culture = umbrian 
+culture = italiu 
 religion = shiite 
 hre = no
 base_tax = 3

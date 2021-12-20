@@ -2,7 +2,7 @@
 
 owner = NAB
 controller = NAB
-culture = neapolitan 
+culture = italiu 
 religion = shiite
 hre = no 
 base_tax = 3

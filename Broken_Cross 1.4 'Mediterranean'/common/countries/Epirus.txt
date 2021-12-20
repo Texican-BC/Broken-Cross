@@ -36,10 +36,10 @@ historical_units = {
 
 monarch_names = {
 	"Thomas #2" = 20
-	"Michael #2" = 20
+	"Michael #3" = 20
 	"Nikephoros #2" = 20
-	"Nicholas #1" = 10
-	"Giovanni #1" = 10
+	"Nicholas #2" = 10
+	"Giovanni #0" = 0
 	"Theodore #1" = 5
 	"Maria #1" = -5
 	"Simeon #1" = 5
@@ -66,7 +66,7 @@ monarch_names = {
 	"Evangelos #0" = 0
 	"Georgios #0" = 0
 	"Gregorios #0" = 0
-	"Ioannes #0" = 0
+	"Ioannes #2" = 10
 	"Konstantinos #0" = 0
 	"Pavlos #0" = 0
 	"Petros #0" = 0
@@ -86,6 +86,7 @@ leader_names = {
 	Branas	
 	Cantacuzene Comnenus 
 	Ducas
+	Kantakuzenos
 	Mavros 
 	Notaras
 	Palaeologus Phocas
