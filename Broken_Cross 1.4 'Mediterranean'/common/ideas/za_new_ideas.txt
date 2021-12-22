@@ -1,0 +1,161 @@
+european_tribal_ideas = {
+	start = {
+		hostile_attrition = 1
+		merchants = 1
+	}
+	bonus = { war_exhaustion_cost = -0.10 }
+	trigger = {
+		capital_scope = {
+			continent = europe
+		}
+		OR = {
+			has_reform = tribal_despotism
+			has_reform = tribal_kingdom
+			has_reform = tribal_federation
+		}
+	}
+	free = yes
+
+	deep_roots = {
+		defensiveness = 0.1
+	}
+	warriors_grit = {
+		shock_damage_received = -0.1
+	}
+	ruthless_raiders = {
+		leader_land_shock = 1
+		loot_amount = 0.10
+	}
+	ancestral_pride = {
+		war_exhaustion_cost = -0.10
+	}
+	arctolatry = {
+		infantry_power = 0.1
+	}
+	side_by_side = {
+		land_morale = 0.1
+	}
+	hero_of_the_legends = {
+		free_leader_pool = 1
+	}
+}
+
+jomsvikings_ideas = {
+	start = {
+		leader_land_shock = 1
+		discipline = 0.05
+	}
+	bonus = {
+		infantry_power = 0.10
+	}
+	trigger = {
+		primary_culture = norsanglic
+	}
+	free = yes
+	
+	jomsviking_code = {
+		land_morale = 0.1
+	}
+	legend_of_jomsborg = {
+		land_forcelimit_modifier = 0.15
+		naval_forcelimit_modifier = 0.05
+	}
+	glory_of_the_allfather = {
+		manpower_recovery_speed = 0.10
+	}
+	name_of_thor = {
+		cb_on_religious_enemies = yes
+	}
+	adopt_feudal_system = {
+		production_efficiency = 0.10
+	}
+	implement_hogting = {
+		stability_cost_modifier = -0.10
+	}
+	valhalla_awaits = {
+		prestige = 1
+	}
+}
+
+nofsinfari_ideas = {
+	start = {
+		tolerance_own = 2
+		mercenary_cost = -0.2
+	}
+
+	bonus = {
+		trade_efficiency = 0.1
+	}
+    
+	trigger = {
+		primary_culture = italiu
+	}
+	free = yes        #will be added at load.
+    
+	textile_diffusion = {
+		production_efficiency = 0.1
+	}
+	ethnic_unity = {
+		culture_conversion_cost = -0.15 
+    	}
+	nizari_jurisprudance = {
+		tolerance_own = 2   
+    	}
+	standardized_sicilian_arabic = {
+		diplomatic_reputation = 1 
+	}
+	christian_condottieri = {
+		infantry_power = 0.05
+		mercenary_discipline = 0.05
+	}
+	dar_taghlim = {
+		idea_cost = -0.1
+	}
+	the_cresant_sea = {
+		trade_range_modifier = 0.25
+	}
+}
+
+euro_muslim_ideas = {
+	start = {
+		global_tax_modifier = 0.15
+		religious_unity = 0.25
+	}
+	
+	bonus = {
+		idea_cost = -0.1
+	}
+	
+	trigger = {
+		capital_scope = {
+			continent = europe
+		}
+		OR = {
+			religion_group = muslim
+		}
+	}
+	free = yes
+	
+	people_of_the_book = {
+		tolerance_heathen = 3
+	}
+	recover_al_andalus = {
+		core_creation = -0.15
+	}
+	beacon_of_learning = {
+		global_institution_spread = 0.1
+	}
+	strait_of_gibraltar = {
+		global_own_trade_power = 0.1
+		trade_steering = 0.1
+	}
+	alhambra = {
+		build_cost = -0.1
+	}
+	moors = {
+		global_manpower_modifier = 0.1
+	}
+	successor_caliphate_cordoba = {
+		prestige = 1
+	}
+}

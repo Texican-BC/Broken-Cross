@@ -58,3 +58,5 @@ VLD = "countries/Vladimir.txt"
 CAF = "countries/Caliphate.txt"
 CAI = "countries/Qahirah.txt"
 
+#New World
+ABM = "countries/Al-Abama.txt"

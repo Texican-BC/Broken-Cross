@@ -8,7 +8,7 @@ capital = 105	# Parma
 fixed_capital = 105 # Cannot move capital away from this province & no power cost to move to it
 
 
-1545.10.20 = {
+1444.1.1 = {
 	monarch = {
 		name = "Pier Luigi"
 		dynasty = "Farnese"
