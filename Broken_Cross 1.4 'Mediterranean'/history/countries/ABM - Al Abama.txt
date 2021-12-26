@@ -1,0 +1,6 @@
+government = republic
+technology_group = muslim
+primary_culture = saksun
+religion = sunni
+capital = 952	# Richmond (James River)
+religious_school = maliki_school

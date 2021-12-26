@@ -1,20 +1,21 @@
 #Country Name: Please see filename.
 
-graphical_culture = muslimgfx
+graphical_culture = westerngfx
 
-color = { 240  255  240 } 
+colonial_parent = SKS
+random_nation_chance = 0
 
-historical_score = 100
+color = { 180 178 161 }
 
 historical_idea_groups = {
-	maritime_ideas
-	defensive_ideas
-	religious_ideas
-	expansion_ideas
-	administrative_ideas
-	offensive_ideas
+	plutocracy_ideas
 	trade_ideas
-	economic_ideas
+	offensive_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+	defensive_ideas
+	maritime_ideas
 }
 
 historical_units = {
@@ -28,16 +29,17 @@ historical_units = {
 }
 
 monarch_names = {
-	"Muhammad #1" = 60
-	"Haruld #2" = 60
+	"Jayufrasun #0" = 100
+	"Muhammad #0" = 60
+	"Haruld #0" = 60
 	"Awzulf #0" = 20
 	"Ibrahim #0" = 20
 	"Umar #0" = 20
-	"Ralf #1" = 20
+	"Ralf #0" = 20
 	"Ayidbald #0" = 10
 	"Ghirith #0" = 10
 	"Musa #0" = 10
-	"Thawr #1" = 10
+	"Thawr #0" = 10
 	
 	"Aliya #0" = -1
 	"Jwdyth #0" = -1
@@ -49,6 +51,7 @@ monarch_names = {
 leader_names = {
 	Aleinaya
 	Burthawik
+	Divis
 	Easifuh
 	Histingh
 	Idrikinj Isilinj
