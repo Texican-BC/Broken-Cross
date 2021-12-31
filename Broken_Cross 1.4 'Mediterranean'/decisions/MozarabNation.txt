@@ -70,7 +70,7 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			change_tag = MOZ
-			iberian_region = {
+			iberia_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

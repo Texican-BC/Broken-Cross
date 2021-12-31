@@ -78,13 +78,37 @@ country_decisions = {
 				}
 				set_government_rank = 2
 			}
-			northern_england_area = {
+			scottish_marches_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = BRD
 			}
-			mercia_area = {
+			yorkshire_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BRD
+			}
+			west_midlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BRD
+			}
+			east_midlands_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BRD
+			}
+			wessex_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BRD
+			}
+			home_counties_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}
@@ -97,12 +121,6 @@ country_decisions = {
 				add_permanent_claim = BRD
 			}
 			wales_area = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = BRD
-			}
-			wessex_area = {
 				limit = {
 					NOT = { owned_by = ROOT }
 				}

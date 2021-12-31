@@ -37,7 +37,7 @@ lombard_monarchy = {
     
     modifiers = {
         stability_cost_modifier = -0.1
-		max_states = 1
+		governing_capacity_modifier = 0.1
     }
     
     conditional = {
@@ -79,7 +79,7 @@ lombard_republic = {
 
 	modifiers = {
 		stability_cost_modifier = -0.1
-		max_states = 1
+		governing_capacity_modifier = 0.1
 	}
 
 	ai = {

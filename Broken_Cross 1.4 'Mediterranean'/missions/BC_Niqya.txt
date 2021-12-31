@@ -12,6 +12,7 @@ NIQ_missions_north = {
 		icon = mission_conquer_50_development
 		required_missions = { }
 		completed_by = 1455.1.1
+
 		provinces_to_highlight = {
 			OR = {
 				province_id = 149
@@ -28,7 +29,7 @@ NIQ_missions_north = {
 			owns = 2296
 		}
 		effect = {
-		151 = {
+			151 = {
 				move_capital_effect = yes
 				add_base_tax = 4
 				add_base_production = 4
@@ -38,7 +39,6 @@ NIQ_missions_north = {
 				name = "NIQ_defeated_abbasids"
 				duration = 5475
 			}
-
 			bulgaria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -64,15 +64,17 @@ NIQ_missions_north = {
 			add_stability = 1
 		}
 	}
+
 	foothold_bulgaria = {
 		icon = mission_have_two_subjects
 		required_missions = { crush_abbasids }
 		position = 3
 		completed_by = 1491.12.6
+
 		provinces_to_highlight = {
-		OR = {
-			area = bulgaria_area
-			province_id = 1764
+			OR = {
+				area = bulgaria_area
+				province_id = 1764
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -80,11 +82,12 @@ NIQ_missions_north = {
 		}
 		trigger = {
 			OR = {
-			bulgaria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				bulgaria_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				owns = 1764
 			}
-			owns = 1764
 		}
 		effect = {
 			add_country_modifier = {
@@ -108,11 +111,13 @@ NIQ_missions_north = {
 			add_prestige = 15
 		}
 	}
+
 	cleanse_macedonia = {
 		icon = mission_unite_home_region
 		required_missions = { foothold_bulgaria }
 		position = 5
 		completed_by = 1477.1.5
+
 		provinces_to_highlight = {
 			OR = {
 				area = macedonia_area
@@ -156,7 +161,6 @@ NIQ_missions_north = {
 				}
 				add_permanent_claim = ROOT
 			}
-
 			sicily_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -164,7 +168,6 @@ NIQ_missions_north = {
 				}
 				add_permanent_claim = ROOT
 			}
-
 			calabria_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -172,7 +175,6 @@ NIQ_missions_north = {
 				}
 				add_permanent_claim = ROOT
 			}
-
 			apulia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -183,10 +185,12 @@ NIQ_missions_north = {
 			add_piety = -0.25
 		}
 	}
+
 	jihad_greece = {
 		icon = mission_non-western_soldiers
 		required_missions = { cleanse_macedonia }
 		completed_by = 1558.1.7
+
 		provinces_to_highlight = {
 			OR = {
 				area = northern_greece_area
@@ -196,32 +200,29 @@ NIQ_missions_north = {
 		}
 		trigger = {
 			OR = {
-
-			northern_greece_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-				has_owner_religion = yes
+				northern_greece_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+					has_owner_religion = yes
+				}
+				morea_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+					has_owner_religion = yes
+				}
+				aegean_archipelago_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+					has_owner_religion = yes
+				}
 			}
-
-			morea_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-				has_owner_religion = yes
-			}
-
-			aegean_archipelago_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-				has_owner_religion = yes
-			}
-
-		}		
-	}
+		}
 		effect = {
 			add_country_modifier = {
 				name = "NIQ_GRE_culture"
 				duration = 9125 #25 years
-			}		}
+			}
+		}
 	}
 }
 
@@ -234,11 +235,12 @@ NIQ_mission_slot_2 = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
-	
+
 	naples_claims = {
 		icon = mission_unite_home_region
 		required_missions = { cleanse_macedonia }
 		position = 6
+
 		provinces_to_highlight = {
 			OR = {
 				area = calabria_area
@@ -298,10 +300,12 @@ NIQ_naval = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
+
 	protect_bosporus = {
 		icon = mission_galleys_in_port
 		required_missions = { }
 		completed_by = 1535.1.1
+
 		trigger = { num_of_galley = 20 }
 		effect = {
 			add_country_modifier = {
@@ -310,10 +314,12 @@ NIQ_naval = {
 			}
 		}
 	}
+
 	islands = {
 		icon = mission_invade_island
 		required_missions = { protect_bosporus }
 		completed_by = 1535.1.1
+
 		provinces_to_highlight = {
 			OR = {
 				province_id = 163
@@ -341,7 +347,6 @@ NIQ_naval = {
 		icon = mission_colonial
 		required_missions = { islands }
 		completed_by = 1608.7.3
-
 		trigger = {
 			num_of_light_ship = 15
 		}
@@ -349,6 +354,7 @@ NIQ_naval = {
 			
 		}
 	}
+
 	dominant_trade = {
 		icon = mission_sea_battles
 		required_missions = { trade_fleet }
@@ -376,6 +382,7 @@ NIQ_expand_south = {
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
+
 	iqta_1 = {
 		icon = mission_conquer_50_development
 		required_missions = { }
@@ -391,12 +398,12 @@ NIQ_expand_south = {
 		}
 	}
 
-
 	foothold_southern_anatolia = {
 		icon = mission_conquer_50_development
-		required_missions = {  }
+		required_missions = { }
 		position = 3
 		completed_by = 1533.7.18
+
 		provinces_to_highlight = {
 			OR = {
 				area = karaman_area
@@ -434,10 +441,12 @@ NIQ_expand_south = {
 			}
 		}
 	}
+
 	anatolia_advances = {
 		icon = mission_conquer_50_development
 		required_missions = { foothold_southern_anatolia }
 		completed_by = 1573.7.18
+
 		provinces_to_highlight = {
 			OR = {
 				area = dulkadir_area
@@ -489,7 +498,7 @@ NIQ_expand_south = {
 				}
 				add_permanent_claim = ROOT
 			}
-			Red_Sea_Hills_area = {
+			gulf_of_arabia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -498,16 +507,18 @@ NIQ_expand_south = {
 			}
 		}
 	}
+
 	southern_advances = {
 		icon = mission_egyptian_mamluk_soldier
 		required_missions = { anatolia_advances }
 		completed_by = 1573.7.18
+
 		provinces_to_highlight = {
 			OR = {
 				area = aleppo_area
 				area = syria_area
 				area = palestine_area
-				area = red_sea_hills_area
+				area = gulf_of_arabia_area
 			}
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
@@ -527,7 +538,7 @@ NIQ_expand_south = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-				red_sea_hills_area = {
+				gulf_of_arabia_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT
 				}
@@ -557,10 +568,12 @@ NIQ_expand_south = {
 			}
 		}
 	}
+
 	religious_unity = {
 		icon = mission_mosque
 		required_missions = { southern_advances }
 		position = 5
+
 		trigger = {
 			religious_unity = 0.95
 			AND = {
@@ -573,10 +586,11 @@ NIQ_expand_south = {
 				name = "NIQ_relig_unity"
 				duration = 9125 #25 years
 			}
-		add_piety = -0.20		
+			add_piety = -0.20		
 		}
 	}
 }
+
 NIQ_expand_south_2 = {
 	slot = 4
 	generic = no
@@ -585,10 +599,12 @@ NIQ_expand_south_2 = {
 		tag = NIQ
 	}
 	has_country_shield = yes
+
 	holy_cities = {
 		icon = mission_unite_home_region
 		required_missions = { southern_advances }
 		position = 6
+
 		provinces_to_highlight = {
 			OR = {
 				area = mecca_area
@@ -599,35 +615,35 @@ NIQ_expand_south_2 = {
 			}
 		}
 		trigger = {
-		AND = {
-			Mecca_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			Medina_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			AND = {
+				mecca_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				medina_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
 			}
 		}
-	}
 		effect = {
-			Mecca_area = {
+			mecca_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 				}
 				add_core = ROOT
 			}
-			Medina_area = {
+			medina_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 				}
 				add_core = ROOT
 			}
-		add_country_modifier = {
+			add_country_modifier = {
 				name = "NIQ_holy_cities"
 				duration = 9125 #25 years
 			}
-		add_piety = -0.40		
+			add_piety = -0.40		
 		}
 	}
 }

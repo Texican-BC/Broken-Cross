@@ -10,7 +10,7 @@ leonese_cortes_legacy = {
 	monarchy = yes
 	start_territory_to_estates = 0.3
 	modifiers = {
-    	max_states = 1
+    	governing_capacity_modifier = 0.1
 		num_accepted_cultures = 2
 		legitimacy = 0.5
 		max_absolutism = 5
@@ -29,7 +29,7 @@ lombard_monarchy_legacy = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-    	max_states = 1
+    	governing_capacity_modifier = 0.1
 		stability_cost_modifier = -0.1
 	}
 	ai = {
@@ -67,7 +67,7 @@ lombard_republic_legacy = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 10
 	modifiers = {
-    	max_states = 1
+    	governing_capacity_modifier = 0.1
 		stability_cost_modifier = -0.1
 	}
 	ai = {

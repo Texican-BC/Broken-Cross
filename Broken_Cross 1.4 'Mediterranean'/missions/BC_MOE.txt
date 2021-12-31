@@ -205,9 +205,11 @@ MOE_slot_5 = {
 				fort_level = 6
 			}
 		}
-		add_country_modifier = {
+		effect = {
+			add_country_modifier = {
 				name = "SKS_sultan_mm"
 				duration = 5475
+			}
 		}
 	}
 	
@@ -227,9 +229,11 @@ MOE_slot_5 = {
 				}
 			}
 		}
-		add_country_modifier = {
+		effect = {
+			add_country_modifier = {
 				name = "SKS_sultan_mm"
 				duration = 5475
+			}
 		}
 	}
 	
@@ -248,9 +252,11 @@ MOE_slot_5 = {
 				}
 			}
 		}
-		add_country_modifier = {
+		effect = {
+			add_country_modifier = {
 				name = "SKS_sultan_mm"
 				duration = 5475
+			}
 		}
 	}
 	
@@ -270,9 +276,11 @@ MOE_slot_5 = {
 				}
 			}
 		}
-		add_country_modifier = {
+		effect = {
+			add_country_modifier = {
 				name = "SKS_sultan_mm"
 				duration = 5475
+			}
 		}
 	}
 }

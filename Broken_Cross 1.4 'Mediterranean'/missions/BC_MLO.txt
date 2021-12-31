@@ -215,10 +215,8 @@ MLO_slot_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			effect = {
-				121 = {
-					add_permanent_claim = ROOT
-				}
+			121 = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
