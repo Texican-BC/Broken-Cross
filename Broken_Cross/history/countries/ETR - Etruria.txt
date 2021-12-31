@@ -15,7 +15,7 @@ capital = 116	# Firenze
 		mil = 6
 	}
 }
-1433.4.4
+1433.4.4 = {
 	heir = {
 		name = "Fillipo"
 		monarch_name = "Fillipo I"

@@ -39,6 +39,18 @@ sound = {
 	file = "claim_defender_faith_coptic.wav"
 }
 sound = {
+	name = defender_of_the_zoroastrian_faith
+	file = "claim_defender_faith_coptic.wav"
+}
+sound = {
+	name = defender_of_the_hussite_faith
+	file = "claim_defender_faith_protestant.wav"
+}
+sound = {
+	name = defender_of_the_anglican_faith
+	file = "claim_defender_faith_protestant.wav"
+}
+sound = {
 	name = age_of_discovery
 	file = "age_of_discovery.wav"
 }
@@ -166,7 +178,7 @@ sound = {
 	file = "start_conversion_eastern_shinto.wav"
 }
 sound = {
-	name = start_convert_shia
+	name = start_convert_shiite
 	file = "start_conversion_muslim_shiite.wav"
 }
 sound = {
@@ -182,11 +194,35 @@ sound = {
 	file = "start_conversion_pagan_animism.wav"
 }
 sound = {
+	name = start_convert_inti
+	file = "start_conversion_pagan_animism.wav"
+}
+sound = {
+	name = start_convert_nahuatl
+	file = "start_conversion_pagan_animism.wav"
+}
+sound = {
+	name = start_convert_mesoamerican_religion
+	file = "start_conversion_pagan_animism.wav"
+}
+sound = {
+	name = start_convert_totemism
+	file = "start_conversion_pagan_animism.wav"
+}
+sound = {
 	name = start_convert_shamanism
 	file = "start_conversion_pagan_shamanism.wav"
 }
 sound = {
 	name = start_convert_tengri_pagan_reformed
+	file = "start_conversion_pagan_shamanism.wav"
+}
+sound = {
+	name = start_convert_hussite
+	file = "start_conversion_christian_reformed.wav"
+}
+sound = {
+	name = start_convert_dreamtime
 	file = "start_conversion_pagan_shamanism.wav"
 }
 sound = {
@@ -277,6 +313,7 @@ sound = {
 	name = revolt
 	#file = "old/revolt.wav"
 	file = "rebels_revolt_alert.wav"
+	volume = 0.7
 }
 sound = {
 	name = country_select
@@ -548,6 +585,7 @@ sound = {
 	name = papacy
 	#file = "old/religionview.wav"
 	file = "papacy_view.wav"
+	volume = 0.8
 }
 sound = {
 	name = parliament
@@ -556,6 +594,7 @@ sound = {
 sound = {
 	name = coptic_blessings
 	file = "coptic_blessings_view.wav"
+	volume = 0.6
 }
 sound = {
 	name = merchant_republic
@@ -589,10 +628,12 @@ sound = {
 	name = hre
 	#file = "old/lawview.wav"
 	file = "holy_roman_empire_screen.wav"
+	volume = 0.8
 }
 sound = {
 	name = celestial_empire
 	file = "chinese_empire_interface.wav"
+	volume = 0.6
 }
 sound = {
 	name = harsh
@@ -653,17 +694,17 @@ sound = {
 }
 
 sound = {
-	name = religion_angelican
+	name = religion_anglican
+	file = "tab_religion_christian.wav"
+}
+
+sound = {
+	name = religion_hussite
 	file = "tab_religion_christian.wav"
 }
 
 sound = {
 	name = religion_reformed
-	file = "tab_religion_christian.wav"
-}
-
-sound = {
-	name = religion_anglican
 	file = "tab_religion_christian.wav"
 }
 
@@ -738,6 +779,21 @@ sound = {
 }
 
 sound = {
+	name = religion_inti
+	file = "tab_religion_america.wav"
+}
+
+sound = {
+	name = religion_nahuatl
+	file = "tab_religion_america.wav"
+}
+
+sound = {
+	name = religion_mesoamerican_religion
+	file = "tab_religion_america.wav"
+}
+
+sound = {
 	name = religion_totemism
 	file = "tab_religion_america.wav"
 }
@@ -752,6 +808,10 @@ sound = {
 	file = "tab_religion_muslim.wav"
 }
 
+sound = {
+	name = religion_dreamtime
+	file = "tab_religion_pagan.wav"
+}
 
 #########################################
 #### ARE USED, BUT SHOULD BE CHECKED ####
@@ -938,6 +998,7 @@ sound = {
 	name = mountainranges
 	file = "amb/general/amb_mountain_loop.wav"
 	always_load = yes
+	volume = 0.60
 }
 
 sound = {
@@ -1095,4 +1156,32 @@ sound = {
 sound = {
 	name = debate_lose
 	file = "debate_lose.wav"
+}
+
+############### Silent Wavfiles to insert delay
+
+sound = 
+{
+    name = "sfx_silence_delay_3sec"
+    file = "sfx_silence_delay_3sec.wav"
+}
+sound = 
+{
+    name = "sfx_silence_delay_6sec"
+    file = "sfx_silence_delay_6sec.wav"
+}
+sound = 
+{
+    name = "sfx_silence_delay_9sec"
+    file = "sfx_silence_delay_9sec.wav"
+}
+sound = 
+{
+    name = "sfx_silence_delay_12sec"
+    file = "sfx_silence_delay_12sec.wav"
+}
+sound = 
+{
+    name = "sfx_silence_delay_15sec"
+    file = "sfx_silence_delay_15sec.wav"
 }

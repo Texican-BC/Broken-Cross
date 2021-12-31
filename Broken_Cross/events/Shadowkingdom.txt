@@ -49,7 +49,7 @@ country_event = {
 		}
 		NOT = {
 			any_country = {
-				is_emperor
+				is_emperor = yes
 				culture_group = french
 			}
 		}

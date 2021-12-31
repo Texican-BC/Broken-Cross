@@ -930,7 +930,6 @@ printing_press = {
 			religion = Ailtazamat
 			region = balkan_region
 			region = anatolia_region
-			region = Ailtazamat
 		}
 
 	}

@@ -15,7 +15,7 @@ discovered_by = chinese
 discovered_by = indian
 discovered_by = Dhimmi
 discovered_by = muslim
-Wdiscovered_by = ottoman
+discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 

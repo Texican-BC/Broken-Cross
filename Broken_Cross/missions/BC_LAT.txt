@@ -151,7 +151,7 @@ LAT_slot_1 = {
 		position = 5
 		required_missions = { LAT_occitainia }
 		provinces_to_highlight = {
-			area = france_region
+			region = france_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -217,7 +217,7 @@ LAT_slot_2 = {
 		position = 7
 		required_missions = { LAT_catlonia }
 		provinces_to_highlight = {
-			area = iberia_region
+			region = iberia_region
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
