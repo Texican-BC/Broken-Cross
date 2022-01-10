@@ -1,10 +1,10 @@
-# Montferrat and Savoy
-vassal = {
-	first = SAV
-	second = MFA
-	start_date = 1444.1.1
-	end_date = 1445.3.12
-}
+## Montferrat and Savoy
+#vassal = {
+#	first = SAV
+#	second = MFA
+#	start_date = 1444.1.1
+#	end_date = 1445.3.12
+#}
 
 # Naples and Provence
 union = {

@@ -65,7 +65,7 @@ add_army_professionalism = 0.05
 		dynasty = "Palaiologos"
 		adm = 2
 		dip = 3
-		mil = 3
+		mil = 6
 	}
 }
 
@@ -81,6 +81,11 @@ add_army_professionalism = 0.05
 		dip = 3
 		mil = 3
 	}
+	clear_scripted_personalities = yes
+	add_heir_personality = infertile_personality
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = babbling_buffoon_personality
 }
 
 1445.3.12 = {
