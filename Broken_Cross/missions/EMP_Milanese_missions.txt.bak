@@ -509,7 +509,7 @@ emp_mlo_venice_branch = {
 						area = tirol_area
 						region = italy_region
 					}
-					country_or_non_sovereign_subject_holds = SWA
+					country_or_non_sovereign_subject_holds = HAB
 				}
 				AND = {
 					province_id = 110
@@ -518,19 +518,19 @@ emp_mlo_venice_branch = {
 			}
 		}
 		trigger = {
-			SWA = {
+			HAB = {
 				is_emperor = no
 			}
 			italy_region = {
 				type = all
-				NOT = { country_or_non_sovereign_subject_holds = SWA }
+				NOT = { country_or_non_sovereign_subject_holds = HAB }
 			}
 			tirol_area = {
 				type = all
-				NOT = { country_or_non_sovereign_subject_holds = SWA }
+				NOT = { country_or_non_sovereign_subject_holds = HAB }
 			}
 			owns_or_non_sovereign_subject_of = 110
-			army_size = SWA
+			army_size = HAB
 		}
 		effect = {
 			add_country_modifier = {

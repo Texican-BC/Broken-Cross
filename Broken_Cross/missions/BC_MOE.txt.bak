@@ -35,13 +35,6 @@ MOE_slot_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			macedonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 		}
 	}
 	
@@ -58,11 +51,6 @@ MOE_slot_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			macedonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			NOT = { exists = ILY }
 		}
 		effect = {
 			macedonia_area = {
@@ -74,11 +62,36 @@ MOE_slot_1 = {
 			}
 		}
 	}
-	
-	MOE_capital = {
+
+	MOE_macedonia = {
 		icon = mission_assemble_an_army
 		position = 3
 		required_missions = { MOE_balkans }
+		provinces_to_highlight = {
+			area = macedonia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			macedonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	MOE_capital = {
+		icon = mission_assemble_an_army
+		position = 4
+		required_missions = { MOE_macedonia }
 		provinces_to_highlight = {
 			area = thrace_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -97,17 +110,12 @@ MOE_slot_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			151 = {
-				change_culture = greek
-				change_religion = iconoclast
-			}
-			add_prestige = 20
 		}
 	}
 	
 	MOE_agean = {
 		icon = mission_assemble_an_army
-		position = 4
+		position = 5
 		required_missions = { MOE_capital }
 		provinces_to_highlight = {
 			area = aegean_archipelago_area
@@ -132,7 +140,7 @@ MOE_slot_1 = {
 	
 	MOE_cyprus = {
 		icon = mission_assemble_an_army
-		position = 5
+		position = 6
 		required_missions = { MOE_agean }
 		provinces_to_highlight = {
 			province_id = 321
@@ -150,7 +158,7 @@ MOE_slot_1 = {
 	
 	MOE_pontus = {
 		icon = mission_assemble_an_army
-		position = 6
+		position = 7
 		required_missions = { MOE_cyprus }
 		provinces_to_highlight = {
 			province_id = 330

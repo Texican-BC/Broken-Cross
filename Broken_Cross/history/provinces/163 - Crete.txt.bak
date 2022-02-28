@@ -2,8 +2,8 @@
 
 owner = MOE
 controller = MOE
-culture = greek
-religion = iconoclast
+culture = yunanian
+religion = sunni
 capital = "Heraklion"
 trade_goods = fish
 hre = no
