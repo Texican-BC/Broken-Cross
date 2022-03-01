@@ -35,6 +35,13 @@ MOE_slot_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			macedonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -51,31 +58,11 @@ MOE_slot_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-		}
-		effect = {
-			macedonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	MOE_macedonia = {
-		icon = mission_assemble_an_army
-		position = 3
-		required_missions = { MOE_balkans }
-		provinces_to_highlight = {
-			area = macedonia_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
 			macedonia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+			NOT = { exists = ILY }
 		}
 		effect = {
 			thrace_area = {
@@ -90,8 +77,8 @@ MOE_slot_1 = {
 	
 	MOE_capital = {
 		icon = mission_assemble_an_army
-		position = 4
-		required_missions = { MOE_macedonia }
+		position = 3
+		required_missions = { MOE_balkans }
 		provinces_to_highlight = {
 			area = thrace_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -110,12 +97,18 @@ MOE_slot_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			321 = { add_permanent_claim = ROOT }
+			151 = {
+				change_culture = greek
+				change_religion = iconoclast
+			}
+			add_prestige = 20
 		}
 	}
 	
 	MOE_agean = {
 		icon = mission_assemble_an_army
-		position = 5
+		position = 4
 		required_missions = { MOE_capital }
 		provinces_to_highlight = {
 			area = aegean_archipelago_area
@@ -126,54 +119,39 @@ MOE_slot_1 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-		}
-		effect = {
-			albania_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	MOE_cyprus = {
-		icon = mission_assemble_an_army
-		position = 6
-		required_missions = { MOE_agean }
-		provinces_to_highlight = {
-			province_id = 321
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
 			owns = 321
 		}
 		effect = {
 			330 = {
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = {
+				name = trade_income_increase
+				duration = 3650
+			}
 		}
 	}
 	
 	MOE_pontus = {
 		icon = mission_assemble_an_army
-		position = 7
-		required_missions = { MOE_cyprus }
+		position = 5
+		required_missions = { MOE_agean }
 		provinces_to_highlight = {
 			province_id = 330
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			owns = 330
+			NOT = { exists = TRE }
 		}
         
         # The effect executed when the mission is claimed. Country scope.
 		effect = {
 			add_country_modifier = {
-				name = "SKS_sultan_mm"
-				duration = 5475
+				name = legitimacy_defended
+				duration = 3650
 			}
+			add_prestige = 10
 		}
 	}
 }
@@ -198,17 +176,17 @@ MOE_slot_5 = {
 		position = 3
 		required_missions = { }
 		provinces_to_highlight = {
-			area = morea_area
+			province_id = 141
 		}
 		trigger = {
-			morea_area = {
-				fort_level = 6
+			141 = {
+				fort_level = 2
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "SKS_sultan_mm"
-				duration = 5475
+				name = defensive_modifier
+				duration = 3650
 			}
 		}
 	}
@@ -216,23 +194,27 @@ MOE_slot_5 = {
 	MOE_gnostics = {
 		icon = mission_assemble_an_army
 		position = 4
-		required_missions = { MOE_peloponese }
+		required_missions = {  }
 		provinces_to_highlight = {
-			area = albania_area
+			OR = {
+				area = albania_area
+				area = macedonia_area
+			}
 		}
 		trigger = {
 			albania_area = {
 				type = all
 				religion = ROOT
-				OR = {
-					culture = ROOT
-				}
+			}
+			macedonia_area = {
+				type = all
+				religion = ROOT
 			}
 		}
 		effect = {
 			add_country_modifier = {
-				name = "SKS_sultan_mm"
-				duration = 5475
+				name = achieved_religious_unity_mission
+				duration = 3650
 			}
 		}
 	}
@@ -245,42 +227,13 @@ MOE_slot_5 = {
 			province_id = 151
 		}
 		trigger = {
-			151 = {
-				owned_by = ROOT
-				OR = {
-					religion = ROOT
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "SKS_sultan_mm"
-				duration = 5475
-			}
-		}
-	}
-	
-	MOE_asia = {
-		icon = mission_assemble_an_army
-		position = 6
-		required_missions = { MOE_patriarch }
-		provinces_to_highlight = {
-			area = aydin_area
-		}
-		trigger = {
-			aydin_area = {
+			thrace_area = {
 				type = all
 				religion = ROOT
-				OR = {
-					culture = ROOT
-				}
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "SKS_sultan_mm"
-				duration = 5475
-			}
+			add_prestige = 20
 		}
 	}
 }
