@@ -237,7 +237,7 @@ MOE_slot_5 = {
 				name = growth_of_the_orthodox_church
 				duration = 3650
 			}
-			add_prestige = 20
+			add_prestige = 10
 		}
 	}
 }

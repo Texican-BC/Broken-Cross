@@ -337,7 +337,7 @@ NIQ_naval = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = "NIQ_medit_supply"
+				name = "NIQ_trade_fleets"
 				duration = 5475
 			}
 		}
@@ -348,10 +348,13 @@ NIQ_naval = {
 		required_missions = { islands }
 		completed_by = 1608.7.3
 		trigger = {
-			num_of_light_ship = 15
+			num_of_light_ship = 30
 		}
 		effect = {
-			
+			add_country_modifier = {
+				name = "NIQ_medit_supply"
+				duration = 5475
+			}
 		}
 	}
 
@@ -367,7 +370,19 @@ NIQ_naval = {
 			}
 		}
 		effect = {
-			
+			151 = {
+				add_base_tax = 2
+				add_base_production = 2
+				if = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+					add_center_of_trade_level = 1
+				}
+				else = {
+					add_base_production = 2
+				}
+			}
 		}
 	}
 

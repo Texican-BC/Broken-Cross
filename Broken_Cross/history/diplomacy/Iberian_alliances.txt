@@ -388,13 +388,13 @@ vassal = {
 	end_date = 1806.1.1
 }
 
-# Granada Saksuns
-alliance = {
-	first = GRA
-	second = SKS
-	start_date = 1444.1.1
-	end_date = 1806.1.1
-}
+## Granada Saksuns
+#alliance = {
+#	first = GRA
+#	second = SKS
+#	start_date = 1444.1.1
+#	end_date = 1806.1.1
+#}
 
 # Barshaluna Baleares
 vassal = {

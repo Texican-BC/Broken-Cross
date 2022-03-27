@@ -1,4 +1,4 @@
-SKS_slot_1 = {
+SKS_slot_1 = { # Severely cut this down
 	slot = 1
 	generic = no
 	ai = yes
@@ -7,12 +7,40 @@ SKS_slot_1 = {
 		tag = SKS
 		NOT = { map_setup = map_setup_random }
 	}
-
-	SKS_battle = {
+	
+	SKS_build_army = {
 		icon = mission_conquer_50_development
 		position = 1
 		completed_by = 1455.1.1
 		required_missions = { }
+
+		trigger = {
+			army_size_percentage = 1
+			num_of_generals = 1
+		}
+		effect = {
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			marrekesh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	SKS_battle = {
+		icon = mission_conquer_50_development
+		position = 2
+		completed_by = 1455.1.1
+		required_missions = { SKS_build_army }
 
 		trigger = {
 			NOT = { exists = IDS }

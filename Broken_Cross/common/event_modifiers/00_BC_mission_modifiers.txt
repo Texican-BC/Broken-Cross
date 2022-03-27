@@ -38,3 +38,7 @@ NIQ_iqta = {
 	can_fabricate_for_vassals = yes
 }
 
+NIQ_trade_fleets = {
+	global_ship_trade_power = 0.2
+	global_own_trade_power = 0.1
+}
