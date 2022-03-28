@@ -11,7 +11,7 @@ trade_goods = grain
 base_manpower = 3
 capital = "Avellino" 
 is_city = yes	# Estimated
-add_core = NAP
+add_core = NAB
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim discovered_by = Dhimmi

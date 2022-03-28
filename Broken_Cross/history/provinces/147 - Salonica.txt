@@ -2,7 +2,7 @@
 
 owner = MOE
 controller = MOE
-culture = yunanian
+culture = greek
 religion = iconoclast
 capital = "Larissa"
 trade_goods = grain

@@ -287,7 +287,7 @@ SKS_ideas = {
 	}
 	
 	sks_saksun = {
-		shock_damage_recieved = -0.1
+		shock_damage_received = -0.1
 	}
 
 	sks_trade = {

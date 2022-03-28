@@ -50,7 +50,10 @@ MOE_slot_1 = {
 		position = 2
 		required_missions = { MOE_epirus }
 		provinces_to_highlight = {
-			area = albania_area
+			OR = {
+				area = albania_area
+				area = macedonia_area
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -179,7 +182,7 @@ MOE_slot_5 = {
 			province_id = 141
 		}
 		trigger = {
-			141 = {
+			146 = {
 				fort_level = 2
 			}
 		}

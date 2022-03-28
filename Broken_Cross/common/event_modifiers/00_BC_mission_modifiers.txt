@@ -70,5 +70,5 @@ saxun_carribean = {
 }
 
 SKS_sultan_qatn = {
-	global_tarrifs = 0.2
+	global_tariffs = 0.2
 }
