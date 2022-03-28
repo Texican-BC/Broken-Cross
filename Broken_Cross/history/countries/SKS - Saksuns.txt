@@ -11,9 +11,9 @@ religious_school = zaidi_school
 	monarch = {
 		name = "Haruld III"
 		dynasty = "Liudwaldinj"
-		adm = 2
-		dip = 1
-		mil = 5
+		adm = 3
+		dip = 2
+		mil = 6
 	}
 	add_piety = 0.3
 }
