@@ -69,6 +69,6 @@ saxun_carribean = {
 	mercantilism_cost = -0.2
 }
 
-sultan_qatn = {
+SKS_sultan_qatn = {
 	global_tarrifs = 0.2
 }

@@ -9,7 +9,7 @@ SKS_slot_5 = { # Military Conquest
 	}
 	
 	SKS_build_army = {
-		icon = mission_conquer_50_development
+		icon = mission_build_up_to_force_limit
 		position = 1
 
 		required_missions = { }
@@ -68,7 +68,7 @@ SKS_slot_5 = { # Military Conquest
 	}
 
 	SKS_battle2 = {
-		icon = mission_conquer_50_development
+		icon = mission_assemble_an_army
 		position = 3
 
 		required_missions = { SKS_battle }
@@ -95,7 +95,7 @@ SKS_slot_5 = { # Military Conquest
 	}
 	
 	SKS_conquer_morocco = {
-		icon = mission_conquer_50_development
+		icon = mission_unite_home_region
 		position = 4
 
 		required_missions = { SKS_battle2 }
@@ -166,7 +166,7 @@ SKS_slot_5 = { # Military Conquest
 	}
 	
 	SKS_new_caliphate = {
-		icon = mission_conquer_50_development
+		icon = mission_monarch_in_throne_room
 		position = 5
 
 		required_missions = { SKS_conquer_morocco }
@@ -233,7 +233,7 @@ SKS_slot_5 = { # Military Conquest
 	}
 	
 	SKS_maghreb = {
-		icon = mission_conquer_50_development
+		icon = mission_cannons_firing
 		position = 6
 
 		required_missions = { SKS_new_caliphate }
@@ -271,7 +271,7 @@ SKS_slot_4 = {
 	}
 
 	SKS_spanish = {
-		icon = mission_conquer_50_development
+		icon = mission_assemble_an_army
 		position = 6
 
 		required_missions = { SKS_new_caliphate }
@@ -310,7 +310,7 @@ SKS_slot_2 = {
 	}
 
 	SKS_build_fleet = {
-		icon = mission_conquer_50_development
+		icon = mission_sea_battles
 		position = 1
 
 		required_missions = { }
@@ -331,7 +331,7 @@ SKS_slot_2 = {
 	}
 	
 	SKS_outposts = {
-		icon = mission_conquer_50_development
+		icon = mission_have_two_subjects
 		position = 2
 
 		required_missions = { SKS_build_fleet }
@@ -413,7 +413,7 @@ SKS_slot_2 = {
 	}
 	
 	SKS_indian_ports = {
-		icon = mission_conquer_50_development
+		icon = mission_assemble_an_army
 		position = 4
 
 		required_missions = { SKS_cape }
@@ -446,7 +446,7 @@ SKS_slot_2 = {
 	}
 	
 	SKS_saxun_india = {
-		icon = mission_conquer_50_development
+		icon = mission_unite_home_region
 		position = 5
 
 		required_missions = { SKS_indian_ports }
@@ -488,7 +488,7 @@ SKS_slot_1 = {
 	}
 
 	SKS_discover = {
-		icon = mission_conquer_50_development
+		icon = mission_establish_high_seas_navy
 		position = 3
 
 		required_missions = { SKS_outposts }
@@ -507,7 +507,7 @@ SKS_slot_1 = {
 	}
 	
 	SKS_carib = {
-		icon = mission_conquer_50_development
+		icon = mission_iberian_conquistador
 		position = 4
 
 		required_missions = { SKS_discover }
@@ -533,7 +533,7 @@ SKS_slot_1 = {
 	}
 	
 	SKS_alabama = {
-		icon = mission_conquer_50_development
+		icon = mission_settlers_north_america
 		position = 5
 
 		required_missions = { SKS_carib }
@@ -547,13 +547,13 @@ SKS_slot_1 = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
 				colonial_region = colonial_eastern_america
-				southeast_america_region
+				region = southeast_america_region
 				is_city = yes
 			}
 		}
 		
 		effect = {
-			custom_tooltip = saxun_qatn
+			set_country_flag = SKS_saxun_qatn
 			add_country_modifier = {
 				name = "sultan_qatn"
 				duration = 5475

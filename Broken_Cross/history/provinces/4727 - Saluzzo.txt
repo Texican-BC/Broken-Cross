@@ -1,6 +1,6 @@
 #4727 - Saluzzo
-owner = SLZ
-controller = SLZ
+owner = SLO
+controller = SLO
 culture = piedmontese
 religion = chalcedonism
 hre = yes
@@ -10,7 +10,7 @@ trade_goods = iron
 base_manpower = 4
 capital = "Saluzzo"
 is_city = yes
-add_core = SLZ
+add_core = SLO
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim discovered_by = Dhimmi
