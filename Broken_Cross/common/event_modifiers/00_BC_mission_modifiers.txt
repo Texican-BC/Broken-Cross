@@ -72,3 +72,40 @@ saxun_carribean = {
 SKS_sultan_qatn = {
 	global_tariffs = 0.2
 }
+
+uniting_italu = {
+	global_autonomy = -0.05
+	core_creation = -0.1
+}
+
+iitalian_sultan = {
+	prestige_decay = -0.005
+	legitimacy = 0.5
+}
+
+italu_lombards_crushed = {
+	global_autonomy = -0.05
+	harsh_treatment_cost = -0.2
+	land_morale = 0.05
+}
+
+italu_crushed_venice = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.1
+}
+
+italu_rules_the_sea = {
+	trade_steering = 0.1
+	trade_efficiency = 0.05
+	mercantilism_cost = -0.1
+}
+
+italu_navy = {
+	galley_power = 0.1
+	yearly_navy_tradition = 1
+}
+
+italu_mercs = {
+	mercenary_discipline = 0.1
+	mercenary_manpower = 0.25
+}
