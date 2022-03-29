@@ -324,7 +324,7 @@ SKS_slot_2 = {
 		}
 		effect = {
 			add_dip_power = 100
-			define_explorer = {
+			create_explorer = {
 				tradition = 80
 			}
 		}
@@ -427,7 +427,7 @@ SKS_slot_2 = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 3
 				region = deccan_region
-				is_port = yes
+				has_port = yes
 			}
 		}
 		effect = {
@@ -439,7 +439,7 @@ SKS_slot_2 = {
 				add_claim = ROOT
 			}
 			random_owned_province = {
-				limit = { region = deccan_region is_port = yes }
+				limit = { region = deccan_region has_port = yes }
 				add_base_production = 3
 			}
 		}

@@ -35,7 +35,7 @@ NIQ_holy_cities = {
 NIQ_iqta = {
 	vassal_income = 0.25
 	vassal_forcelimit_bonus = 0.25
-	can_fabricate_for_vassals = yes
+	#can_fabricate_for_vassals = yes ###only works in ideas
 }
 
 NIQ_trade_fleets = {
@@ -102,7 +102,7 @@ italu_rules_the_sea = {
 
 italu_navy = {
 	galley_power = 0.1
-	yearly_navy_tradition = 1
+	navy_tradition = 1
 }
 
 italu_mercs = {
