@@ -2,7 +2,7 @@
 
 owner = ILY
 controller = ILY
-culture = yunanian
+culture = greek
 religion = bogomilist
 capital = "Kastoria"
 trade_goods = wine

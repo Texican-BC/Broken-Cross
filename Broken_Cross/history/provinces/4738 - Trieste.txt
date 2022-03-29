@@ -12,6 +12,7 @@ base_manpower = 2
 capital = "Trieste" 
 is_city = yes # Estimated
 add_core = STY
+add_core = VEN
 
 discovered_by = western
 discovered_by = eastern

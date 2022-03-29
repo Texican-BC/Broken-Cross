@@ -398,7 +398,7 @@ ABM_ideas = {
 	}
 	free = yes
 	abm_arabian_horses = {
-		cavalry_power = 0.15
+		cavalry_power = 0.2
 	}
 	sultan_qatn = {
 		global_trade_goods_size_modifier = 0.1
@@ -411,7 +411,7 @@ ABM_ideas = {
 		trade_efficiency = 0.1
 	}
 	abm_pious_warriors = {
-		land_morale = 0.1
+		land_morale = 0.15
 	}
 	abm_defend_coasts ={
 		ship_durability = 0.05

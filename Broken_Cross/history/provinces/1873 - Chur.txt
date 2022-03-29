@@ -1,7 +1,7 @@
 #1873 - Chur
 
-owner = SWI
-controller = SWI
+owner = TTL
+controller = TTL
 culture = swiss
 religion = chalcedonism
 capital = "Chur"
@@ -13,7 +13,7 @@ base_manpower = 1
 is_city = yes
 estate = estate_church
 fort_15th = yes
-add_core = SWI
+add_core = TTL
 discovered_by = western
 discovered_by = eastern
 discovered_by = Dhimmi discovered_by = muslim

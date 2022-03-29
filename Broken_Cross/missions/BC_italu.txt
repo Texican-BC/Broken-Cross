@@ -305,7 +305,7 @@ italu_slot_1 = {
 	
 	italu_christian = {
 		icon = mission_assemble_an_army
-		position = 4
+		position = 1
 		required_missions = {  }
 		trigger = { num_of_mercenaries = 25 }
 		effect = {
