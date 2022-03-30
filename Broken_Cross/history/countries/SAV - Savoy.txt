@@ -6,6 +6,7 @@ religion = chalcedonism
 technology_group = western
 capital = 205 # Chambéry
 add_army_professionalism = 0.05
+add_accepted_culture = occitain
 
 1391.1.1 = {
 	monarch = {
