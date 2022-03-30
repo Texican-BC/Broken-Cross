@@ -5,10 +5,10 @@ emp_mlo_conquest_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 	}
 	potential = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 		tag = MLO
 		NOT = { map_setup = map_setup_random }
 	}
@@ -216,10 +216,10 @@ emp_mlo_venice_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 	}
 	potential = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 		tag = MLO
 		NOT = { map_setup = map_setup_random }
 	}
@@ -546,10 +546,10 @@ emp_mlo_security_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 	}
 	potential = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 		tag = MLO
 		NOT = { map_setup = map_setup_random }
 	}
@@ -815,10 +815,10 @@ emp_mlo_victorious_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 	}
 	potential = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 		tag = MLO
 		NOT = { map_setup = map_setup_random }
 	}
@@ -903,10 +903,10 @@ emp_mlo_swiss_mercs_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 	}
 	potential = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 		tag = MLO
 		NOT = { map_setup = map_setup_random }
 	}
@@ -946,10 +946,10 @@ emp_mlo_security_branch_2 = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 	}
 	potential = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 		tag = MLO
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1181,10 +1181,10 @@ emp_mlo_economy_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 	}
 	potential = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 		tag = MLO
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1330,10 +1330,10 @@ emp_mlo_papal_branch = {
 	generic = no
 	ai = yes
 	potential_on_load = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 	}
 	potential = {
-		#has_dlc = "Emperor"
+		has_dlc = "Emperor"
 		tag = MLO
 		NOT = { map_setup = map_setup_random }
 	}
