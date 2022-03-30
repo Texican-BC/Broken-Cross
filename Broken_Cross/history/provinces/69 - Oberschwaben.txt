@@ -1,5 +1,5 @@
 # 69 - Oberschwaben (incl. Lindau, Biberach, Überlingen, Ravensberg, and many of the other Free cities of Schwaben)
-culture = swabian
+culture = hannoverian
 owner = SWA
 controller = SWA
 add_core = SWA

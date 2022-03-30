@@ -12,7 +12,7 @@ base_manpower = 5
 capital = "Pavia"
 is_city = yes	# Estimated
 add_core = MFA
-
+add_core = MLO
 
 
 discovered_by = western
