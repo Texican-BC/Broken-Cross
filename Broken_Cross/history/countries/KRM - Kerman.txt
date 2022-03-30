@@ -7,6 +7,15 @@ technology_group = muslim
 capital = 432 # Kerman
 religious_school = ismaili_school
 
+1444.1.1 = {
+	monarch = {
+		name = "Mohammad Sâdiq"
+		dynasty = "Fatemi"
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}
 1504.1.1 = {
 	religious_school = jafari_school
 }

@@ -5,3 +5,13 @@ religion = chalcedonism
 technology_group = eastern
 capital = 1772 # Nitra
 government_rank = 1
+
+1444.1.1 = {
+	monarch = {
+		name = "Luboslav I"
+		dynasty = "von Habsburg"
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}
