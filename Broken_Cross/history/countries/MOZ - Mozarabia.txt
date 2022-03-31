@@ -2,5 +2,5 @@ government = monarchy
 add_government_reform = autocracy_reform
 primary_culture = mozarabic
 religion = chalcedonism
-technology_group = Dhimmi
+technology_group = muslim
 capital = 208 # Toledo

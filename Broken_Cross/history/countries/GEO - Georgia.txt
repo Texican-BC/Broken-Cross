@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = autocracy_reform
 primary_culture = georgian
 religion = paulician
-technology_group = Dhimmi
+technology_group = eastern
 capital = 423 # T'bilisi
 
 

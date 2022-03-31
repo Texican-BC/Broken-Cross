@@ -486,6 +486,31 @@ gaelic	= {
 			Tancostyla Tegla Thecla Ysbail Ystradwel
 		}
 	}
+	cornish = {
+		primary = CRN
+		dynasty_names = { 
+			Aberffraw Dinefwr Mathrafal Gwynedd Tudor Kernew "of Cornwall" Glyndwr "Ternyllwg" 
+			#CK2
+			"Morgannwg" "Caradoc" "Mostyn" "Gorfynydd" Denbigh "Gwynn" "Gwarthaf" "Môn" "Penfro"
+			"Aberteifi" "Gethin" "Gruffudd" "Carmarthen" "Mynyw" "Anwyl of Tywyn" "Fane"
+			"of Bristol" "Evans" "Owen" "Lloyd" 
+		}
+		male_names = {
+			Arthek Arthyen Austol Benesek Branok Branek Bryok Breok Brioc Cadan Cador Carantok Casek Casworon Clemo
+			Clesek Corentyn Costentyn De Day Edern Enyon Gerens Gerren Goron Gryffyn Gwalather Hedrek Hedrok
+			Jago Jory Jowan Kenal Keneder Kenver Kitto Locryn Lowen Madern Massen Meryasek Peran Perran Piran
+			Pasco Pascow Rewan Ruan Ruman Santo Treeve Treave Cadwur Casworan
+		}
+		female_names = {
+			Cryda Creeda Endellion Endelienta Eia Keyne Keyna
+			Mabena Newlyn Newlyna Wenn Gwenn Gwenyth Beaten Bennath Berlewen Bersaba
+			Beryan Bryluen Caja Chesten Conwenna Delen Demelza Derowen Derwa Doryty Ebrel Elestren Elowen
+			Emblyn Endelyn Eseld Ewella Glanna Gwennol Hedra Ia Jenifry Jenifer Jowanet Kelynen Kensa Kerensa
+			Keresen Kerezen Kerra Lamorna Loveday Lowdy Lowena Lowenna Mabyn Melder Melwyn Melyonen Melyor Meliora
+			Meraud Merouda Merryn Metheven Morgelyn Morvoren Morwen Morwenna Nessa Pasca Pascatte Peswera Rosen 
+			Rosenwyn Senara Sowena Sowenna Splanna Steren Talwyn Tamsyn Tegen Tregereth Tressa Trueth Wenna Ysella
+		}
+	}
 	highland_scottish = {
 		primary = HSC
 

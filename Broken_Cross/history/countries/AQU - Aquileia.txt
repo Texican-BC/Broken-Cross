@@ -2,7 +2,7 @@ government = theocracy
 add_government_reform = leading_clergy_reform
 primary_culture = venetian
 religion = chalcedonism
-technology_group = Dhimmi
+technology_group = western
 capital = 111	# Friuli
 government_rank = 1
 

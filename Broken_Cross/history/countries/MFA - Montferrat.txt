@@ -3,7 +3,7 @@ add_government_reform = feudalism_reform
 government_rank = 1
 primary_culture = piedmontese
 religion = chalcedonism
-technology_group = Dhimmi
+technology_group = western
 capital = 2981	# Montferrat
 add_army_professionalism = 0.05
 

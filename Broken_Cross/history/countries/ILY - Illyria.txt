@@ -3,7 +3,7 @@ add_government_reform = autocracy_reform
 government_rank = 2
 primary_culture = illyrian
 religion = bogomilist
-technology_group = Dhimmi
+technology_group = eastern
 capital = 4175 # Lezhe
 historical_friend = MOE
 

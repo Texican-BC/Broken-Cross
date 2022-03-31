@@ -2,7 +2,7 @@ government = monarchy
 add_government_reform = leonese_cortes
 primary_culture = leonese
 religion = chalcedonism
-technology_group = Dhimmi
+technology_group = western
 historical_rival = POR
 capital = 208 #Leon
 

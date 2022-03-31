@@ -1,7 +1,7 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = Dhimmi
+technology_group = western
 religion = chalcedonism
 primary_culture = tuscan
 capital = 113	# Ferrara
