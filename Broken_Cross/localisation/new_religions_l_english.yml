@@ -359,7 +359,7 @@
  Bretlandic_rebels_army: "$RELIGION$ Army"
  #
  avigism: "Avigism"
- avigism_religion_desc: "Avigism is an Iconoclastic, French sect of Christianity that focuses on the reconquest of holy sites in what is called a Crusade. founded by Samuel François. and brought into Iberia by Ambrose Castrita"
+ avigism_religion_desc: "Avigism is an Iconoclastic, French sect of Christianity that focuses on the reconquest of holy sites in what is called a Crusade. founded by Samuel François, and brought into Iberia by Ambrose Castrita"
  avigism_rebels_demand: "Convert $COUNTRYNAME$"
  avigism_rebels_demand_desc: "The religious rebels fight for the $RELIGION$ religion. They demand that we recognize its supremacy or at the very least cease our efforts to convert them and let them worship in peace."
  avigism_rebels_title: "Religious"

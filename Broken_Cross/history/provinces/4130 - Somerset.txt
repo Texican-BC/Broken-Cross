@@ -2,7 +2,7 @@
 
 owner = CRN
 controller = CRN
-culture = welsh
+culture = cornish
 religion = insular
 hre = no
 base_tax = 2
