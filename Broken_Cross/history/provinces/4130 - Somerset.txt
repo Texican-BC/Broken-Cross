@@ -1,7 +1,7 @@
 #4130 - Somerset
 
-owner = CRN
-controller = CRN
+owner = SSX
+controller = SSX
 culture = cornish
 religion = insular
 hre = no
@@ -12,11 +12,17 @@ base_manpower = 1
 capital = "Bath"
 is_city = yes
 estate = estate_church
-add_core = CRN
+add_core = SSX
 discovered_by = western
 discovered_by = Dhimmi discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
+
+1441.6.1 = {
+	owner = CRN
+	controller = CRN
+	add_core = CRN
+}
 
 1453.1.1 = { unrest = 5 } # Start of the War of the Roses
 1461.3.1 = { unrest = 0 revolt = { type = pretender_rebels size = 0 } controller = REB } # Increasing Yorkist Support in the South

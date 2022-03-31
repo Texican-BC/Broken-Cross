@@ -179,7 +179,7 @@ MOE_slot_5 = {
 		position = 3
 		required_missions = { }
 		provinces_to_highlight = {
-			province_id = 141
+			province_id = 146
 		}
 		trigger = {
 			146 = {

@@ -6,12 +6,32 @@ primary_culture = cornish
 religion = insular
 capital = 233	# Exeter
 
-1443.8.15 = {
+1433.8.15 = {
 	monarch = {
 		name = "Howel II"
 		dynasty = "Lloyd"
+		birth_date = 1412.1.1
 		adm = 5
 		dip = 5
 		mil = 6
 	}
+}
+
+1437.1.1 = {
+	heir = {
+		name = "Howel"
+		monarch_name = "Howel III"
+		dynasty = "Lloyd"
+		birth_date = 1437.1.1
+		death_date = 1462.1.1
+		adm = 0
+		dip = 0
+		mil = 1
+		claim_strength = 95
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = conqueror_personality
+	add_ruler_personality = bold_fighter_personality
+	add_ruler_personality = infertile_personality
+	add_heir_personality = cruel_personality
 }
