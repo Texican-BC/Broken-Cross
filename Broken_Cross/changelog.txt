@@ -1,3 +1,11 @@
+Version 1.4 - Staying Alive Update (1.33 Compatible)
+	* Updated for 1.33
+	* Fixed various small errors in history files 
+		* All countries should now start with a ruler, fixed a couple misplaced cultures, etc.)
+	* New Mission Trees for South Italian Muslims, Niqya, Morea and the Saksuns
+	* Updated flags for various countries (Italy, Portugal, Spain, Milan and a few others)
+	* Dhimmi tech group is now unused for the time being due to problems
+
 Version 1.3.1
 	+ Siquly now has core on caligari.
 	+ Viken now has Norwegian ideas.
@@ -21,7 +29,7 @@ Version 1.3 (Reformation Update) (1.29 Compatible)
 	+ Surrender of Majrit Event chain, Shadow kindom of france, and fall of the Abbasids.
 	+ New ideas for Qastany, Qahirah, Vladmir, Ruma, Niqya and Siqly.
 	+ Added Dhimmi tech being a combonation of western, and muslim Infantry and Anatolian Cavalry.
-	+ Yunans can form Rûm, Muslim Russians can form Rusyya.
+	+ Yunans can form RÃ»m, Muslim Russians can form Rusyya.
 	+ Volkovy Russians can form Ruthenia.
 	+ Andalucians can form Qastany.
 	* Majorica is now part of Barshaluna.
@@ -62,11 +70,11 @@ Version 1.2.1 Patch
 	* Changed Italiu states to be Shi'a
 	* Freed Majorca nation
 	* Hungarians are now all Tengri and tribal
-	* Gave León a starting heir
+	* Gave LeÃ³n a starting heir
 	* Bug fixes
 
 Version 1.2.0_01
-	* Fixed León and Portugal not being historical friends
+	* Fixed LeÃ³n and Portugal not being historical friends
 	* Fixed problems with the archive
 
 Version 1.2 (Poland Update)
