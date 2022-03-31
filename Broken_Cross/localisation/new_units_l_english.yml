@@ -1,6 +1,6 @@
 ﻿l_english:
 Dhimmi_mixed:0 "Mixed Order Infantry"
-Dhimmi_mixedDESCR:0 "
+Dhimmi_mixedDESCR:0 ""
 Dhimmi_terico:0 "Tercio Infantry"
 Dhimmi_tericoDESCR:0 "Tercio Infantry adopted from western tech"
 Dhimmi_Square:0 "Square Infantry"
@@ -53,3 +53,5 @@ Dhimmi_cav_lancer:0 "Reformed Lancer"
 Dhimmi_cav_lancerDESCR:0 "Lancer Cavalry adopted from anatolian tech" 
 Dhimmi_cav_dragoons:0 "Toprakli Dragoons"
 Dhimmi_cav_dragoonsDESCR:0 "Dragoons adopted from anatolian tech" 
+Dhimmi_afsharid:0 "Ahsharid"
+Dhimmi_afsharid_desc:0 "Ask Tex."

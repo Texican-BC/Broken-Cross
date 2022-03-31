@@ -2,8 +2,8 @@
 
 owner = CRN
 controller = CRN
-culture = saksun
-religion = sunni
+culture = cornish
+religion = insular
 hre = no
 base_tax = 2
 base_production = 2

@@ -1,9 +1,8 @@
 government = monarchy
 add_government_reform = feudalism_reform
 government_rank = 1
-technology_group = Dhimmi
-primary_culture = welsh
-add_accepted_culture = saksun
+technology_group = western
+primary_culture = cornish
 religion = insular
 capital = 233	# Exeter
 

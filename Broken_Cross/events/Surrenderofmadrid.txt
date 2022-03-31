@@ -89,6 +89,7 @@ country_event = {
 		219 = { cede_province = LON } 
 		2751 = { cede_province = LON }
 		2755 = { cede_province = LON } 
+		4551 = { cede_province = LON }
 	}
 }
 

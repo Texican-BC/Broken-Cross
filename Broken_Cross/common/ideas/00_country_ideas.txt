@@ -5270,7 +5270,10 @@ ALB_ideas = {
 	}
 	
 	trigger = {
-		tag = ALB
+		OR = {
+			tag = ALB
+			tag = ILY # At some point give them their own ideas, but it's better than the generic Tex gave them
+		}
 	}
 	free = yes
 	

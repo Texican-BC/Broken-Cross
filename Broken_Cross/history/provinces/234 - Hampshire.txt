@@ -2,8 +2,8 @@
 
 owner = CRN
 controller = CRN
-culture = norsanglic
-religion = Bretlandic
+culture = saksun
+religion = shiite
 hre = no
 base_tax = 3
 base_production = 3
