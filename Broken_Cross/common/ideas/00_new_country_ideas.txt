@@ -1,7 +1,7 @@
 RMA_ideas = {
 	start = {
-		monthly_piety = -0.1 
-		army_tradition = 0.5 
+		monthly_piety = -0.001
+		land_morale = 0.15
 	}
 
 	bonus = {
@@ -18,11 +18,11 @@ RMA_ideas = {
 		idea_cost = -0.05
 	}
 	rma_kontra_l_insara = {
-		land_morale = 0.1 
-    	}
+		army_tradition = 0.5
+    }
 	rma_standardized_sicilian_arabic = {
 		diplomatic_reputation = 1
-    	}
+    }
 	rma_public_representives = {
 		global_unrest = -1
 	}

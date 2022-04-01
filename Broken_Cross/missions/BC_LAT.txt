@@ -6,10 +6,7 @@ LAT_slot_1 = {
     
     # Determines when a series appears for a country. Country scope.
     potential = {
-		OR = {
-			tag = LAT
-			tag = KNI
-		}
+		tag = LAT
 		NOT = { map_setup = map_setup_random }
     }
 	
@@ -180,10 +177,7 @@ LAT_slot_2 = {
     
     # Determines when a series appears for a country. Country scope.
     potential = {
-        OR = {
-			tag = LAT
-			tag = KNI
-		}
+		tag = LAT
 		NOT = { map_setup = map_setup_random }
     }
 	
@@ -246,10 +240,7 @@ LAT_slot_5 = {
     
     # Determines when a series appears for a country. Country scope.
     potential = {
-        OR = {
-			tag = LAT
-			tag = KNI
-		}
+		tag = LAT
 		NOT = { map_setup = map_setup_random }
     }
 	
