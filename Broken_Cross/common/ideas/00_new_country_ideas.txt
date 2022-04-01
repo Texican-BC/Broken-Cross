@@ -5,7 +5,7 @@ RMA_ideas = {
 	}
 
 	bonus = {
-		religious_unity = 0.2
+		tolerance_heathen = 2
 	}
     
 	trigger = {

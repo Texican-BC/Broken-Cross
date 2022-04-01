@@ -1,7 +1,7 @@
 # Urbino
 
-owner = URB
-controller = URB
+owner = RMA
+controller = RMA
 culture = tuscan 
 religion = chalcedonism 
 hre = no 
@@ -11,13 +11,24 @@ trade_goods = grain
 base_manpower = 2
 capital = "Urbino" 
 is_city = yes
-add_core = URB
+add_core = RMA
 discovered_by = western
 discovered_by = eastern
 discovered_by = Dhimmi discovered_by = muslim
 discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
+
+1401.1.1 = {
+	owner = URB
+	controller = URB
+	add_core = URB
+}
+
+1420.1.1 = { # Rumans retake the city
+	owner = RMA
+	controller = RMA
+}
 
 
 1408.1.1 = { owner = NAP controller = NAP add_core = NAP } # Ladislas takes control of Ancona
