@@ -25,7 +25,7 @@ country_decisions = {
 				}
 			}
 			OR = {
-				primary_culture = andalucian
+				culture_group = andalucian_group
 				culture_group = maghrebi
 			}
 			religion_group = muslim
@@ -126,9 +126,9 @@ country_decisions = {
 			set_capital = 225 # Cordoba
 			if = {
 				limit = {
-					NOT = { primary_culture = andalucian }
+					NOT = { culture_group = andalucian_group }
 				}
-				change_primary_culture = andalucian
+				change_culture_group = andalucian_group
 			}
 			if = {
 				limit = {

@@ -40,8 +40,6 @@ country_decisions = {
 				province_id = 318	# Smyrna
 				province_id = 1853	# Kozani
 				province_id = 2296	# Biga
-				province_id = 330 # Trebizond
-				province_id = 321 # Cyprus
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -59,12 +57,9 @@ country_decisions = {
 			owns = 318	# Smyrna
 			owns = 1853	# Kozani
 			owns = 2296	# Biga
-			owns = 330 # Trebizond
-			owns = 321 #Cyprus 
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
-			adm_tech = 10
 		}
 		effect = {
 			151 = {

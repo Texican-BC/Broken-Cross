@@ -421,3 +421,52 @@ ABM_ideas = {
 		culture_conversion_cost = -0.1
 	}
 }
+
+LAT_ideas = {
+	start = {
+		discipline = 0.05
+		global_missionary_strength = 0.2
+	}
+	
+	bonus = {
+		leader_land_shock = 1
+	}
+	
+	trigger = {
+		tag = LAT
+	}
+	
+	free = yes
+	
+	reconquete = {
+		unjustified_demands = -0.1
+		siege_ability = 0.1
+	}
+	
+	subjugated_rome = {
+		yearly_patriarch_authority = 0.005
+		prestige = 1
+	}
+	
+	notre_mer = {
+		galley_power = 0.2
+		galley_cost = -0.15
+	}
+	
+	convert_muslims = {
+		missionaries = 1
+	}
+	
+	rebuild_countryside = {
+		development_cost = -0.1
+		global_trade_goods_size_modifier = 0.05
+	}
+	
+	defender_faith = {
+		diplomatic_reputation = 1
+	}
+	
+	crusader_empire = {
+		army_tradition = 0.5
+	}
+}

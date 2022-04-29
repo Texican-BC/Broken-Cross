@@ -32,9 +32,9 @@ hagia_sophia = {
 			OR = {
 				AND = {
 					OR = {
-						religion = orthodox
+						religion = iconoclast
 						religion = coptic
-						religion = catholic
+						religion = chalcedonism
 						religion_group = muslim
 					}
 					has_owner_religion = yes
@@ -42,18 +42,18 @@ hagia_sophia = {
 				AND = {
 					owner = {
 						OR = {
-							secondary_religion = orthodox
+							secondary_religion = iconoclast
 							secondary_religion = coptic
-							secondary_religion = catholic
+							secondary_religion = chalcedonism
 							secondary_religion = sunni
 							secondary_religion = shiite
 							secondary_religion = ibadi
 						}
 					}
 					OR = {
-						religion = orthodox
+						religion = iconoclast
 						religion = coptic
-						religion = catholic
+						religion = chalcedonism
 						religion_group = muslim
 						has_owner_religion = yes
 					}
@@ -88,9 +88,9 @@ hagia_sophia = {
 			OR = {
 				AND = {
 					OR = {
-						religion = orthodox
+						religion = iconoclast
 						religion = coptic
-						religion = catholic
+						religion = chalcedonism
 						religion_group = muslim
 					}
 					has_owner_religion = yes
@@ -98,18 +98,18 @@ hagia_sophia = {
 				AND = {
 					owner = {
 						OR = {
-							secondary_religion = orthodox
+							secondary_religion = iconoclast
 							secondary_religion = coptic
-							secondary_religion = catholic
+							secondary_religion = chalcedonism
 							secondary_religion = sunni
 							secondary_religion = shiite
 							secondary_religion = ibadi
 						}
 					}
 					OR = {
-						religion = orthodox
+						religion = iconoclast
 						religion = coptic
-						religion = catholic
+						religion = chalcedonism
 						religion_group = muslim
 						has_owner_religion = yes
 					}
@@ -125,9 +125,9 @@ hagia_sophia = {
 			OR = {
 				AND = {
 					OR = {
-						religion = orthodox
+						religion = iconoclast
 						religion = coptic
-						religion = catholic
+						religion = chalcedonism
 						religion_group = muslim
 					}
 					has_owner_religion = yes
@@ -135,18 +135,18 @@ hagia_sophia = {
 				AND = {
 					owner = {
 						OR = {
-							secondary_religion = orthodox
+							secondary_religion = iconoclast
 							secondary_religion = coptic
-							secondary_religion = catholic
+							secondary_religion = chalcedonism
 							secondary_religion = sunni
 							secondary_religion = shiite
 							secondary_religion = ibadi
 						}
 					}
 					OR = {
-						religion = orthodox
+						religion = iconoclast
 						religion = coptic
-						religion = catholic
+						religion = chalcedonism
 						religion_group = muslim
 						has_owner_religion = yes
 					}
@@ -2856,7 +2856,7 @@ stpeters_cathedral = {
 	#can we build it?
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion = chalcedonism
 		}
 	}
 
@@ -2873,14 +2873,14 @@ stpeters_cathedral = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion = chalcedonism
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion = chalcedonism
 		}
 	}
 
@@ -7807,7 +7807,7 @@ kiev_pechersk_lavra = {
 	#can we build it?
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = orthodox
+			religion = iconoclast
 		}
 	}
 
@@ -7824,14 +7824,14 @@ kiev_pechersk_lavra = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = orthodox
+			religion = iconoclast
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = orthodox
+			religion = iconoclast
 		}
 	}
 
@@ -14124,7 +14124,7 @@ rila_monasteries = {
 
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = orthodox
+			religion = iconoclast
 		}
 	}
 
@@ -14136,13 +14136,13 @@ rila_monasteries = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = orthodox
+			religion = iconoclast
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = orthodox
+			religion = iconoclast
 		}
 	}
 
@@ -14458,7 +14458,7 @@ san_antonio_missions = {
 
 	build_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion = chalcedonism
 		}
 	}
 
@@ -14470,13 +14470,13 @@ san_antonio_missions = {
 
 	can_use_modifiers_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion = chalcedonism
 		}
 	}
 
 	can_upgrade_trigger = {
 		province_is_or_accepts_religion = {
-			religion = catholic
+			religion = chalcedonism
 		}
 	}
 

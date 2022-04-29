@@ -1,7 +1,7 @@
 #120 - Abbruzzi
 
-owner = NAB
-controller = NAB
+owner = RMA
+controller = RMA
 culture = italiu 
 religion = shiite 
 hre = no 
@@ -13,6 +13,7 @@ capital = "L'Aquila"
 estate = estate_church
 is_city = yes 
 add_core = NAB
+add_core = RMA
 
 
 
