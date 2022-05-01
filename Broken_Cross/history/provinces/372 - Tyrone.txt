@@ -1,7 +1,7 @@
 #372 - Tyrone
 
-owner = ULS
-controller = ULS
+owner = TYR
+controller = TYR
 culture = irish
 religion = insular
 hre = no
@@ -11,7 +11,6 @@ trade_goods = wool
 base_manpower = 2
 capital = "Dungannon"
 is_city = yes
-add_core = ULS
 add_core = TYR
 discovered_by = western
 discovered_by = Dhimmi discovered_by = muslim

@@ -373,9 +373,9 @@ royal_marriage = {
 }
 
 #Northumberland-Isles
-vassal = {
-	first = NOL
-	second = LOI
-	start_date = 1444.1.1
-	end_date = 1493.1.1
-}
+#vassal = { # The Isles were famously protective of their own autonomy from Scotland, Northumberland is farther off, I don't see how they could keep them subjugated
+#	first = NOL
+#	second = LOI
+#	start_date = 1444.1.1
+#	end_date = 1493.1.1
+#}

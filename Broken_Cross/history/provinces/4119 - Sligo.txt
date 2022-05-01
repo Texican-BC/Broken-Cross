@@ -1,7 +1,7 @@
 #4119 - Sligo
 
-owner = CNN
-controller = CNN
+owner = SLN
+controller = SLN
 culture = irish
 religion = insular
 hre = no
@@ -12,7 +12,6 @@ base_manpower = 2
 capital = "Sligo"
 is_city = yes
 add_core = SLN
-add_core = CNN
 discovered_by = western
 discovered_by = Dhimmi discovered_by = muslim
 discovered_by = ottoman
