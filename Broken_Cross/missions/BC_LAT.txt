@@ -1,20 +1,23 @@
-LAT_slot_1 = {
-    slot = 1                    # Which column the missions will appear in. 1 to 5.
+# Missions for KNI, can lead to LAT
+LAT_slot_2 = {
+    slot = 2                    # Which column the missions will appear in. 1 to 5.
     generic = no             # Whether missions within this series are considered generic.
     ai = yes          # Whether the AI will claim missions in this series.
     has_country_shield = yes  # Whether to display the country shield on the icon.    
     
     # Determines when a series appears for a country. Country scope.
     potential = {
-		tag = LAT
+		OR = {
+			tag = KNI
+			tag = LAT
+		}
 		NOT = { map_setup = map_setup_random }
     }
 	
 	LAT_sardinia = {
-		icon = mission_assemble_an_army
+		icon = seize_sardinia
 		position = 1
 		required_missions = { }
-		trigger = { army_size = 40 }
 		provinces_to_highlight = {
 			area = corsica_sardinia_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -26,18 +29,29 @@ LAT_slot_1 = {
 			}
 		}
 		effect = {
-			baleares_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+			country_event = { id = KNI_LAT_events.1 }
+			if = {
+				limit = { mission_completed = LAT_armada }
+				sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
+				western_sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
 			}
 		}
 	}
 	
-	LAT_balearies = {
-		icon = mission_assemble_an_army
+	LAT_baleares = {
+		icon = mission_have_two_subjects
 		position = 2
 		required_missions = { LAT_sardinia }
 		provinces_to_highlight = {
@@ -45,94 +59,24 @@ LAT_slot_1 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			baleares_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+				baleares_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				AND = {
+					MJO = {
+						is_subject = no
+						religion = chalcedonism
+					}
+					baleares_area = {
+						type = all
+						owned_by = MJO
+					}
+				}
 			}
 		}
 		effect = {
-			provence_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	LAT_provence = {
-		icon = mission_assemble_an_army
-		position = 3
-		required_missions = { LAT_balearies }
-		provinces_to_highlight = {
-			area = provence_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			provence_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			liguria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	LAT_genoa = {
-		icon = mission_assemble_an_army
-		position = 4
-		required_missions = { LAT_provonce }
-		provinces_to_highlight = {
-			area = liguria_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			liguria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			languedoc_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	LAT_occitainia = {
-		icon = mission_assemble_an_army
-		position = 5
-		required_missions = { LAT_genoa }
-		provinces_to_highlight = {
-			area = languedoc_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			languedoc_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			france_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			catalonia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -140,200 +84,60 @@ LAT_slot_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-		}
-	}
-	
-	LAT_france = {
-		icon = mission_assemble_an_army
-		position = 5
-		required_missions = { LAT_occitainia }
-		provinces_to_highlight = {
-			region = france_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			france_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			albania_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+			if = {
+				limit = { MJO = { is_subject_of = ROOT } }
+				add_country_modifier = {
+					name = ""
+					duration = -1
 				}
-				add_permanent_claim = ROOT
 			}
 		}
 	}
 }
 
-LAT_slot_2 = {
-    slot = 2                    # Which column the missions will appear in. 1 to 5.
+LAT_slot_3 = {
+    slot = 3                    # Which column the missions will appear in. 1 to 5.
     generic = no             # Whether missions within this series are considered generic.
     ai = yes          # Whether the AI will claim missions in this series.
     has_country_shield = yes  # Whether to display the country shield on the icon.    
     
     # Determines when a series appears for a country. Country scope.
     potential = {
-		tag = LAT
+		OR = {
+			tag = KNI
+			tag = LAT
+		}
 		NOT = { map_setup = map_setup_random }
     }
 	
-	LAT_catlonia = {
-		icon = mission_assemble_an_army
-		position = 6
-		required_missions = { LAT_occitainia }
-		provinces_to_highlight = {
-			area = catalonia_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			catalonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			iberia_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	LAT_iberia = {
-		icon = mission_assemble_an_army
-		position = 7
-		required_missions = { LAT_catlonia }
-		provinces_to_highlight = {
-			region = iberia_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			iberia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			albania_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-}
-
-LAT_slot_5 = {
-    slot = 5                    # Which column the missions will appear in. 1 to 5.
-    generic = no             # Whether missions within this series are considered generic.
-    ai = yes          # Whether the AI will claim missions in this series.
-    has_country_shield = yes  # Whether to display the country shield on the icon.    
-    
-    # Determines when a series appears for a country. Country scope.
-    potential = {
-		tag = LAT
-		NOT = { map_setup = map_setup_random }
-    }
-	
-	LAT_scicily = {
-		icon = mission_assemble_an_army
-		position = 3
+	LAT_armada = {
+		icon = mission_establish_high_seas_navy
+		position = 1
 		required_missions = { }
-		provinces_to_highlight = {
-			area = sicily_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
 		trigger = {
-			sicily_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			navy_size_percentage = 1
 		}
 		effect = {
-			calabria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+			add_country_modifier = {
+				name = "KNI_naval_enthusiasm"
+				duration = -1
+			}
+			if = {
+				limit = { mission_completed = LAT_sardinia }
+				sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
-			}
-			121 = {
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	LAT_napels = {
-		icon = mission_assemble_an_army
-		position = 4
-		required_missions = { LAT_scicily }
-		provinces_to_highlight = {
-			area = calabria_area
-			province_id = 121
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			calabria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			owns = 121
-		}
-		effect = {
-			tuscany_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				western_sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
 				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	LAT_tuscany = {
-		icon = mission_assemble_an_army
-		position = 5
-		required_missions = { LAT_napels }
-		provinces_to_highlight = {
-			area = tuscany_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			tuscany_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			118 = {
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-	
-	LAT_rome = {
-		icon = mission_assemble_an_army
-		position = 6
-		required_missions = { LAT_tuscany }
-		provinces_to_highlight = {
-			province_id = 118
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			owns = 118
-		}
-		effect = {
-			330 = {
-				add_permanent_claim = ROOT
 			}
 		}
 	}

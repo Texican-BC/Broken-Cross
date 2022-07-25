@@ -128,7 +128,7 @@ country_decisions = {
 				limit = {
 					NOT = { culture_group = andalucian_group }
 				}
-				change_culture_group = andalucian_group
+				change_primary_culture = granadan
 			}
 			if = {
 				limit = {
