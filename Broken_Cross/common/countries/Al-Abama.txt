@@ -1,0 +1,69 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+colonial_parent = SKS
+random_nation_chance = 0
+
+color = { 180 178 161 }
+
+historical_idea_groups = {
+	plutocracy_ideas
+	trade_ideas
+	offensive_ideas
+	religious_ideas
+	diplomatic_ideas
+	spy_ideas
+	defensive_ideas
+	maritime_ideas
+}
+
+historical_units = {
+	mamluk_archer
+	mamluk_cavalry_charge
+	mamluk_duel
+	mamluk_musket_charge
+	muslim_mass_infantry
+	muslim_dragoon
+	ali_bey_reformed_infantry
+}
+
+monarch_names = {
+	"Jayufrasun #0" = 100
+	"Muhammad #0" = 60
+	"Haruld #0" = 60
+	"Awzulf #0" = 20
+	"Ibrahim #0" = 20
+	"Umar #0" = 20
+	"Ralf #0" = 20
+	"Ayidbald #0" = 10
+	"Ghirith #0" = 10
+	"Musa #0" = 10
+	"Thawr #0" = 10
+	
+	"Aliya #0" = -1
+	"Jwdyth #0" = -1
+	"Mariam #0" = -1
+	"Sighrid #0" = -1
+	"Wilfrun #0" = -1
+}
+
+leader_names = {
+	Aleinaya
+	Burthawik
+	Divis
+	Easifuh
+	Histingh
+	Idrikinj Isilinj
+	Liudwaldinj
+	Sisla
+	Uwzualdinj
+	Yifingh Yurlinj
+}
+
+ship_names = {
+	Tawwab Muntaqim Afuww Fa'uf "Malik Mulk"
+	"Jalal Ikram" Muqsit Jami Ghani Mughni
+	Mani Darr Nafi Nur Hadi Badi Baqi Warith
+	Rashid Sabur "Fazl Azim"
+}

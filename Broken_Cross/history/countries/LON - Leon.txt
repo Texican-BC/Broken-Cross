@@ -1,0 +1,36 @@
+government = monarchy
+add_government_reform = leonese_cortes
+primary_culture = leonese
+religion = chalcedonism
+technology_group = western
+historical_rival = POR
+capital = 208 #Leon
+
+1412.8.15 = {
+	monarch = {
+		name = "Alfonso XII"
+		dynasty = "de León"
+		birth_date = 1412.8.15
+		death_date = 1455.10.3
+		adm = 3
+		dip = 1
+		mil = 4
+	}
+}
+
+1440.9.10 = {
+	heir = {
+		name = "Juan"
+		monarch_name = "Juan IV"
+		dynasty = "de León"
+		birth_date = 1440.1.15
+		death_date = 1481.8.28
+		claim = 95
+		adm = 6
+		dip = 5
+		mil = 6
+		leader = {	name = "Juan IV"	type = general	fire = 3	shock = 2	manuever = 3	siege = 2 }
+	}
+	clear_scripted_personalities = yes
+	add_heir_personality = conqueror_personality
+}

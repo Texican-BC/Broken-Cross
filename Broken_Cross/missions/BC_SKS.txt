@@ -1,0 +1,563 @@
+SKS_slot_5 = { # Military Conquest
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SKS
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	SKS_build_army = {
+		icon = mission_build_up_to_force_limit
+		position = 1
+
+		required_missions = { }
+
+		trigger = {
+			army_size_percentage = 1
+			num_of_generals = 1
+		}
+		effect = {
+			western_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			marrekesh_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 5475
+			}
+		}
+	}
+	
+	SKS_battle = {
+		icon = mission_conquer_50_development
+		position = 2
+
+		required_missions = { SKS_build_army }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = western_morocco_area
+				area = marrekesh_area
+			}
+			owned_by = IDS
+		}
+		trigger = {
+			NOT = { exists = IDS }
+		}
+		effect = {
+			tafilalt_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	SKS_battle2 = {
+		icon = mission_assemble_an_army
+		position = 3
+
+		required_missions = { SKS_battle }
+
+		provinces_to_highlight = {
+			area = tafilalt_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tafilalt_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			northern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	SKS_conquer_morocco = {
+		icon = mission_unite_home_region
+		position = 4
+
+		required_missions = { SKS_battle2 }
+
+		provinces_to_highlight = {
+			OR = {
+				area = western_morocco_area
+				area = marrekesh_area
+				area = northern_morocco_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			western_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			marrekesh_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "saxun_morocco"
+				duration = 5475
+			}
+			upper_andalucia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_andalucia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			toledo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			extremadura_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			alentejo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	SKS_new_caliphate = {
+		icon = mission_monarch_in_throne_room
+		position = 5
+
+		required_missions = { SKS_conquer_morocco }
+
+		provinces_to_highlight = {
+			OR = {
+				area = upper_andalucia_area
+				area = lower_andalucia_area
+				area = toledo_area
+				area = extremadura_area
+				area = alentejo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			upper_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_andalucia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			toledo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			extremadura_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			alentejo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			set_government_rank = 3
+			add_prestige = 20
+			225 = {
+				move_capital_effect = yes
+				change_culture = saksun
+				change_religion = ROOT
+			}
+			add_country_modifier = {
+				name = "saxun_caliph"
+				duration = -1
+			}
+			iberia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			maghreb_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	SKS_maghreb = {
+		icon = mission_cannons_firing
+		position = 6
+
+		required_missions = { SKS_new_caliphate }
+
+		provinces_to_highlight = {
+			region = maghreb_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			maghreb_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			egypt_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+SKS_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SKS
+		NOT = { map_setup = map_setup_random }
+	}
+
+	SKS_spanish = {
+		icon = mission_assemble_an_army
+		position = 6
+
+		required_missions = { SKS_new_caliphate }
+
+		provinces_to_highlight = {
+			region = iberia_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			iberia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_prestige = 25
+			add_mil_power = 100
+			add_adm_power = 100
+			add_country_modifier = {
+				name = "saksun_inquisition"
+				duration = 5475
+			}
+		}
+	}
+}
+
+SKS_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SKS
+		NOT = { map_setup = map_setup_random }
+	}
+
+	SKS_build_fleet = {
+		icon = mission_sea_battles
+		position = 1
+
+		required_missions = { }
+
+		trigger = {
+			navy_size_percentage = 1
+			OR = {
+				num_of_light_ship = 8
+				num_of_heavy_ship = 3
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			create_explorer = {
+				tradition = 80
+			}
+		}
+	}
+	
+	SKS_outposts = {
+		icon = mission_have_two_subjects
+		position = 2
+
+		required_missions = { SKS_build_fleet }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = macaronesia_area
+				area = cap_verde_area
+				area = sao_tome_area
+				area = angola_namibia_area
+				area = guinea_coast_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			calc_true_if = {
+				all_province = {
+					OR = {
+						area = macaronesia_area
+						area = cap_verde_area
+						area = sao_tome_area
+						area = angola_namibia_area
+						area = guinea_coast_area
+					}
+					owned_by = ROOT
+					is_city = yes
+				}
+				amount = 6
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "colonial_enthusiasm"
+				duration = 5475
+			}
+		}
+	}
+	
+	SKS_cape = {
+		icon = mission_conquer_50_development
+		position = 3
+
+		required_missions = { SKS_outposts }
+		
+		provinces_to_highlight = {
+			region = south_africa_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				region = south_africa_region
+				is_city = yes
+			}
+		}
+		effect = {
+			malabar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			kanara_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			konkan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+	
+	SKS_indian_ports = {
+		icon = mission_assemble_an_army
+		position = 4
+
+		required_missions = { SKS_cape }
+		
+		provinces_to_highlight = {
+			region = deccan_region
+			has_port = yes
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 3
+				region = deccan_region
+				has_port = yes
+			}
+		}
+		effect = {
+			deccan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			random_owned_province = {
+				limit = { region = deccan_region has_port = yes }
+				add_base_production = 3
+			}
+		}
+	}
+	
+	SKS_saxun_india = {
+		icon = mission_unite_home_region
+		position = 5
+
+		required_missions = { SKS_indian_ports }
+		
+		provinces_to_highlight = {
+			region = deccan_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			deccan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "saxun_east_india"
+				duration = -1
+			}
+			india_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+}
+
+SKS_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		tag = SKS
+		NOT = { map_setup = map_setup_random }
+	}
+
+	SKS_discover = {
+		icon = mission_establish_high_seas_navy
+		position = 3
+
+		required_missions = { SKS_outposts }
+
+		trigger = {
+			colonial_eastern_america = { has_discovered = ROOT }
+			colonial_the_carribean = { has_discovered = ROOT }
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "the_unknown_frontier"
+				duration = 5475
+			}
+		}
+	}
+	
+	SKS_carib = {
+		icon = mission_iberian_conquistador
+		position = 4
+
+		required_missions = { SKS_discover }
+
+		provinces_to_highlight = {
+			colonial_region = colonial_the_carribean
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_the_carribean
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "saxun_carribean"
+				duration = 5475
+			}
+		}
+	}
+	
+	SKS_alabama = {
+		icon = mission_settlers_north_america
+		position = 5
+
+		required_missions = { SKS_carib }
+
+		provinces_to_highlight = {
+			colonial_region = colonial_eastern_america
+			region = southeast_america_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_eastern_america
+				region = southeast_america_region
+				is_city = yes
+			}
+		}
+		
+		effect = {
+			set_country_flag = saxun_qatn
+			add_country_modifier = {
+				name = "SKS_sultan_qatn"
+				duration = 5475
+			}
+		}
+	}
+}

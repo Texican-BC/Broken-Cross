@@ -1,0 +1,19 @@
+#4789 - Segovia
+
+owner = LON		#Juan II of Castille
+controller = LON
+add_core = LON
+add_core = MJT
+culture = mozarabic
+religion = chalcedonism
+hre = no
+base_tax = 3
+base_production = 3
+trade_goods = cloth 
+base_manpower = 2
+capital = "Segovia"
+is_city = yes
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim discovered_by = Dhimmi
+discovered_by = ottoman

@@ -1,0 +1,246 @@
+MOE_slot_1 = {
+    slot = 1                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+		OR = {
+			tag = MOE
+			tag = GRE
+		}
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	MOE_epirus = {
+		icon = mission_assemble_an_army
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			area = northern_greece_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			northern_greece_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			albania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			macedonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	MOE_balkans = {
+		icon = mission_assemble_an_army
+		position = 2
+		required_missions = { MOE_epirus }
+		provinces_to_highlight = {
+			OR = {
+				area = albania_area
+				area = macedonia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			albania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			macedonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			NOT = { exists = ILY }
+		}
+		effect = {
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	MOE_capital = {
+		icon = mission_assemble_an_army
+		position = 3
+		required_missions = { MOE_balkans }
+		provinces_to_highlight = {
+			area = thrace_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			thrace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			aegean_archipelago_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			321 = { add_permanent_claim = ROOT }
+			151 = {
+				change_culture = greek
+				change_religion = iconoclast
+			}
+			add_prestige = 20
+		}
+	}
+	
+	MOE_agean = {
+		icon = mission_assemble_an_army
+		position = 4
+		required_missions = { MOE_capital }
+		provinces_to_highlight = {
+			area = aegean_archipelago_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			aegean_archipelago_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns = 321
+		}
+		effect = {
+			330 = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = trade_income_increase
+				duration = 3650
+			}
+		}
+	}
+	
+	MOE_pontus = {
+		icon = mission_assemble_an_army
+		position = 5
+		required_missions = { MOE_agean }
+		provinces_to_highlight = {
+			province_id = 330
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			owns = 330
+			NOT = { exists = TRE }
+		}
+        
+        # The effect executed when the mission is claimed. Country scope.
+		effect = {
+			add_country_modifier = {
+				name = byzantium_resurgent
+				duration = 3650
+			}
+			add_prestige = 10
+		}
+	}
+}
+
+MOE_slot_5 = {
+    slot = 5                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        OR = {
+			tag = MOE
+			tag = GRE
+		}
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	MOE_peloponese = {
+		icon = mission_assemble_an_army
+		position = 3
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 146
+		}
+		trigger = {
+			146 = {
+				fort_level = 2
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = defensive_modifier
+				duration = 3650
+			}
+		}
+	}
+	
+	MOE_gnostics = {
+		icon = mission_assemble_an_army
+		position = 4
+		required_missions = {  }
+		provinces_to_highlight = {
+			OR = {
+				area = albania_area
+				area = macedonia_area
+			}
+		}
+		trigger = {
+			albania_area = {
+				type = all
+				religion = ROOT
+			}
+			macedonia_area = {
+				type = all
+				religion = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = achieved_religious_unity_mission
+				duration = 3650
+			}
+		}
+	}
+	
+	MOE_patriarch = {
+		icon = mission_assemble_an_army
+		position = 5
+		required_missions = { MOE_gnostics }
+		provinces_to_highlight = {
+			province_id = 151
+		}
+		trigger = {
+			thrace_area = {
+				type = all
+				religion = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = growth_of_the_orthodox_church
+				duration = 3650
+			}
+			add_prestige = 10
+		}
+	}
+}

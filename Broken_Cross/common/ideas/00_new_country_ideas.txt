@@ -1,0 +1,472 @@
+RMA_ideas = {
+	start = {
+		monthly_piety = -0.001
+		land_morale = 0.15
+	}
+
+	bonus = {
+		tolerance_heathen = 2
+	}
+    
+	trigger = {
+		tag = RMA
+	}
+	free = yes        #will be added at load.
+    
+	rma_nizari_ta_wli = {
+		tolerance_own = 1 
+		idea_cost = -0.05
+	}
+	rma_kontra_l_insara = {
+		army_tradition = 0.5
+    }
+	rma_standardized_sicilian_arabic = {
+		diplomatic_reputation = 1
+    }
+	rma_public_representives = {
+		global_unrest = -1
+	}
+	rma_pilgrims_path = {
+		global_tax_modifier = 0.10 
+	}
+	rma_christian_condottieri = {
+		infantry_power = 0.05
+		mercenary_discipline = 0.05
+	}
+	rma_imamate_of_rome = {
+		global_missionary_strength = 0.02
+	}
+}
+
+SQL_ideas = {
+	start = {
+		tolerance_heretic = 2
+		global_ship_cost = -0.1 
+	}
+
+	bonus = {
+		religious_unity = 0.2
+	}
+    
+	trigger = {
+		tag = SQL
+	}
+	free = yes        #will be added at load.
+    
+	sql_nizari_jurisprudance = {
+		tolerance_own = 2
+	}
+	sql_bieb_tal_izlam = {
+		missionaries = 1 
+    }
+	sql_pearl_of_the_mediterranian = {
+		global_trade_power = 0.1  
+	}
+	sql_berber_captains = {
+		navy_tradition = 1 
+	}
+	sql_standardized_sicilian_arabic = {
+		diplomatic_reputation = 1
+	}
+	sql_christian_condottieri = {
+		infantry_power = 0.05
+		mercenary_discipline = 0.05
+	}
+	sql_il_bahar_taghna = {
+		light_ship_power = 0.2
+	}
+}
+
+VLD_ideas = {
+	start = {
+		core_creation = -0.15
+		global_tax_modifier = 0.05
+	}
+
+	bonus = {
+		global_manpower_modifier = 0.2
+	}
+    
+	trigger = {
+		tag = VLD
+	}
+	free = yes        #will be added at load.
+    
+	vld_Holy_State_of_Vladimir = {
+		tolerance_own = 2
+	}
+	vld_Restore_the_Great_City = {
+		development_cost = -0.1 
+		development_cost = -0.1
+    	}
+	vld_At_The_Confluence_of_Giants = {
+		caravan_power = 0.2
+	}
+	vld_Reform_the_Druzhina = {
+		discipline = 0.05
+	}
+	vld_Atillery_Corps = {
+		artillery_power = 0.1
+	}
+	vld_Vassalize_the_Lesser_Kings = {
+		liberty_desire = -10
+    }
+	vld_siberian_frontier = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+}
+
+QST_ideas = {
+	start = {
+		defensiveness = 0.25
+		global_supply_limit_modifier = 0.33
+	}
+
+	bonus = {
+		land_morale = 0.1
+	}
+	
+	trigger = {
+		tag = QST
+	}
+	free = yes        #will be added at load.
+
+	qst_gateway = {
+		prestige = 0.5 
+	}
+	
+	qst_bulwark = {
+		missionaries = 1
+	}
+
+	qst_testament = {
+		legitimacy = 1 
+	}
+
+	qst_adopt = {
+		cavalry_power = 0.1
+	}
+
+	qst_education = {
+		global_missionary_strength = 0.02
+		core_creation = -0.1
+	}
+
+	qst_arabic = {	
+		culture_conversion_cost = -0.25
+	}
+
+	qst_trade = {
+		global_trade_power = 0.15
+		
+	}
+}		
+
+CAI_ideas = {
+	start = {
+		development_cost = -0.15
+		trade_steering = 0.15
+	}
+
+	bonus = {
+		global_tax_modifier = 0.1
+	}
+
+	trigger = {
+		tag = CAI
+	}
+	free = yes        #will be added at load.
+
+	cai_burials = {
+		legitimacy = 1 
+	}
+	
+	cai_stronghold = {
+		land_morale = 0.1
+	}
+
+	cai_arts = {
+		idea_cost = -0.05
+		global_heretic_missionary_strength = 0.03
+	}
+
+	cai_hejazi = {
+		global_trade_power = 0.1
+	}
+	
+	cai_blue_turbans = {
+		infantry_power = 0.2
+	}
+	
+	cai_fatimid_method = {
+		administrative_efficiency = 0.05
+	}
+
+	cai_centralization = {
+		yearly_absolutism = 0.1
+	}
+}
+
+NIQ_ideas = {
+	start = {
+		siege_ability = 0.15
+		global_missionary_strength = 0.01
+	}
+
+	bonus = {
+		merchants = 1
+	}
+
+	trigger = {
+		tag = NIQ
+	}
+	free = yes        #will be added at load.
+
+	niq_crossfire = {
+		religious_unity = 0.25
+	}
+	
+	niq_draft = {
+		global_manpower_modifier = 0.3
+	}
+
+	niq_schools = {
+		technology_cost = -0.1
+	}
+
+	niq_fire = {
+		leader_land_fire = 2
+	}
+	
+	niq_dominance = {
+		ae_impact = -0.15
+	}
+	
+	niq_naval = {
+		galley_power = 0.15
+	}
+
+	niq_proclamation = {
+		core_creation = -0.15
+	}
+}
+SKS_ideas = {
+	start = {
+		range = 0.5
+		infantry_power = 0.1
+	}
+
+	bonus = {
+		colonists = 1
+	}
+
+	trigger = {
+		tag = SKS
+	}
+	free = yes        #will be added at load.
+
+	sks_language = {
+		adm_tech_cost_modifier = -0.1
+	}
+	
+	sks_population = {
+		culture_conversion_cost = -0.15
+	}
+
+	sks_legacy = {
+		global_autonomy = -0.05
+	}
+
+	sks_pioneers = {
+		global_institution_spread = 0.15
+	}
+	
+	sks_homes = {
+		global_colonial_growth = 15
+	}
+	
+	sks_saksun = {
+		shock_damage_received = -0.1
+	}
+
+	sks_trade = {
+		trade_steering = 0.1
+	}
+}
+MOZ_ideas = {
+	start = {
+		discipline = 0.1
+		navy_tradition = 1
+	}
+
+	bonus = {
+		missionaries = 1
+	}
+
+	trigger = {
+		tag = MOZ
+	}
+	free = yes        #will be added at load.
+
+	moz_rite = {
+		global_missionary_strength = 0.02
+	}
+	
+	moz_conversion = {
+		native_assimilation = 0.25
+	}
+
+	moz_crusade = {
+		shock_damage = 0.1
+	}
+
+	moz_legacy = {
+		land_morale = 0.1
+	}
+	
+	moz_beacon = {
+		tolerance_heretic = 1
+	}
+	
+	moz_light = {
+		diplomatic_reputation = 1
+	}
+
+	moz_protected = {
+		defensiveness = 0.25
+	}
+}
+MOE_ideas = {
+	start = {
+		global_heretic_missionary_strength = 0.01
+		core_creation = -0.25
+	}
+
+	bonus = {
+		defensiveness = 0.25
+	}
+
+	trigger = {
+		OR ={
+			tag = MOE
+			tag = GRE
+		}
+	}
+	free = yes        #will be added at load.
+
+	moe_subjugation = {
+		legitimacy = 1
+	}
+
+	moe_center = {
+		tolerance_own = 2
+	}
+
+	moe_coporation = {
+		tolerance_heathen = 3
+	}
+	
+	moe_between = {
+		trade_steering = 0.25
+	}
+	
+	moe_unite = {
+		global_unrest = -2
+	}
+
+	moe_remnants = {
+		diplomatic_upkeep = 1
+	}
+	
+	moe_mountains = {
+		leader_land_manuever = 1
+	}
+}
+
+ABM_ideas = {
+	start = {
+		global_colonial_growth = 20
+		global_ship_cost = -0.1
+	}
+	bonus = {
+		republican_tradition = 0.3
+		legitimacy = 1
+	}
+	trigger = {
+		tag = ABM
+	}
+	free = yes
+	abm_arabian_horses = {
+		cavalry_power = 0.2
+	}
+	sultan_qatn = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	new_futuhat = {
+		colonists = 1
+		cb_on_religious_enemies = yes
+	}
+	control_gulf_mexico = {
+		trade_efficiency = 0.1
+	}
+	abm_pious_warriors = {
+		land_morale = 0.15
+	}
+	abm_defend_coasts ={
+		ship_durability = 0.05
+	}
+	convert_pagans = {
+		global_missionary_strength = 0.1
+		culture_conversion_cost = -0.1
+	}
+}
+
+LAT_ideas = {
+	start = {
+		discipline = 0.05
+		global_missionary_strength = 0.2
+	}
+	
+	bonus = {
+		leader_land_shock = 1
+	}
+	
+	trigger = {
+		tag = LAT
+	}
+	
+	free = yes
+	
+	reconquete = {
+		unjustified_demands = -0.1
+		siege_ability = 0.1
+	}
+	
+	subjugated_rome = {
+		yearly_patriarch_authority = 0.005
+		prestige = 1
+	}
+	
+	notre_mer = {
+		galley_power = 0.2
+		galley_cost = -0.15
+	}
+	
+	convert_muslims = {
+		missionaries = 1
+	}
+	
+	rebuild_countryside = {
+		development_cost = -0.1
+		global_trade_goods_size_modifier = 0.05
+	}
+	
+	defender_faith = {
+		diplomatic_reputation = 1
+	}
+	
+	crusader_empire = {
+		army_tradition = 0.5
+	}
+}

@@ -1,7 +1,0 @@
-government = monarchy
-add_government_reform = autocracy_reform
-primary_culture = portugese
-add_accepted_culture = leonese
-religion = chalcedonism
-technology_group = Dhimmi
-capital = 208 # Toledo

@@ -1,9 +1,0 @@
-government = theocracy
-add_government_reform = monastic_order_reform
-government_rank = 1
-primary_culture = occitain
-religion = chalcedonism
-technology_group = Dhimmi
-capital = 1247 # Rhodes
-historical_friend = GEN
-add_army_professionalism = 0.1

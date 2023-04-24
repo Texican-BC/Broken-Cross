@@ -1,0 +1,111 @@
+
+#### Broken Cross ####
+
+NIQ_defeated_abbasids = {
+	trade_efficiency = 0.15
+	global_institution_spread = 0.25
+}
+
+NIQ_defender_of_faith = {
+	religious_unity = 0.35
+	tolerance_heretic = 2
+}
+
+NIQ_medit_supply = {
+	supply_limit_modifier = 0.35
+	naval_tradition_from_trade = 0.2
+}
+
+NIQ_GRE_culture = {
+	global_institution_spread = 0.35
+	institution_spread_from_true_faith = 0.35
+}
+
+NIQ_relig_unity = {
+	religious_unity = 0.35
+	monthly_piety = -0.1
+}
+
+NIQ_holy_cities = {
+	missionaries = 1
+	global_missionary_strength = 0.08
+	missionary_maintenance_cost = -0.3
+}
+
+NIQ_iqta = {
+	vassal_income = 0.25
+	vassal_forcelimit_bonus = 0.25
+	#can_fabricate_for_vassals = yes ###only works in ideas
+}
+
+NIQ_trade_fleets = {
+	global_ship_trade_power = 0.2
+	global_own_trade_power = 0.1
+}
+
+saxun_morocco = {
+	harsh_treatment_cost = -0.33
+	global_autonomy = -0.05
+}
+
+saxun_caliph = {
+	tolerance_own = 1
+	prestige = 1
+	legitimacy = 1
+}
+
+saksun_inquisition = {
+	global_heathen_missionary_strength = 0.02
+	missionary_maintenance_cost = -0.2
+}
+
+saxun_east_india = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.1
+}
+
+saxun_carribean = {
+	trade_efficiency = 0.1
+	mercantilism_cost = -0.2
+}
+
+SKS_sultan_qatn = {
+	global_tariffs = 0.2
+}
+
+uniting_italu = {
+	global_autonomy = -0.05
+	core_creation = -0.1
+}
+
+iitalian_sultan = {
+	prestige_decay = -0.005
+	legitimacy = 0.5
+}
+
+italu_lombards_crushed = {
+	global_autonomy = -0.05
+	harsh_treatment_cost = -0.2
+	land_morale = 0.05
+}
+
+italu_crushed_venice = {
+	trade_efficiency = 0.1
+	global_trade_power = 0.1
+}
+
+italu_rules_the_sea = {
+	trade_steering = 0.1
+	trade_efficiency = 0.05
+	mercantilism_cost = -0.1
+}
+
+italu_navy = {
+	galley_power = 0.1
+	navy_tradition = 1
+}
+
+italu_mercs = {
+	mercenary_discipline = 0.1
+	mercenary_manpower = 0.25
+}

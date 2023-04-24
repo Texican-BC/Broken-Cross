@@ -1,0 +1,144 @@
+# Missions for KNI, can lead to LAT
+LAT_slot_2 = {
+    slot = 2                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+		OR = {
+			tag = KNI
+			tag = LAT
+		}
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	LAT_sardinia = {
+		icon = seize_sardinia
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			area = corsica_sardinia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			corsica_sardinia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = KNI_LAT_events.1 }
+			if = {
+				limit = { mission_completed = LAT_armada }
+				sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				western_sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	LAT_baleares = {
+		icon = mission_have_two_subjects
+		position = 2
+		required_missions = { LAT_sardinia }
+		provinces_to_highlight = {
+			area = baleares_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			OR = {
+				baleares_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				AND = {
+					MJO = {
+						is_subject = no
+						religion = chalcedonism
+					}
+					baleares_area = {
+						type = all
+						owned_by = MJO
+					}
+				}
+			}
+		}
+		effect = {
+			catalonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = { MJO = { is_subject_of = ROOT } }
+				add_country_modifier = {
+					name = ""
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+LAT_slot_3 = {
+    slot = 3                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+		OR = {
+			tag = KNI
+			tag = LAT
+		}
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	LAT_armada = {
+		icon = mission_establish_high_seas_navy
+		position = 1
+		required_missions = { }
+		trigger = {
+			navy_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = "KNI_naval_enthusiasm"
+				duration = -1
+			}
+			if = {
+				limit = { mission_completed = LAT_sardinia }
+				sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				western_sicily_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}

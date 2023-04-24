@@ -1,0 +1,135 @@
+# Surrender of Madrid
+namespace = Surrender_of_madrid
+country_event = {
+	id = Surrender_of_madrid.1
+	title = "Surrender_of_madrid.1.t"
+	desc = "Surrender_of_madrid.1.d"
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	
+	trigger = {
+		NOT = { has_global_flag = Surrender_of_madrid }
+		normal_or_historical_nations = yes
+		NOT = { is_year = 1500 }
+		culture_group = iberian
+		religion = chalcedonism
+		tag = LON
+	}
+	
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_global_flag = Surrender_of_madrid
+		}
+	}
+	
+	option = {			#LON pushes claim
+		name = "LON_pushes"
+		ai_chance = { factor = 90 }
+		set_global_flag = LON_pushes
+		add_opinion = {
+			who = GRA
+			modifier = surrender_madrid_push_claim
+		}
+		add_prestige = 15
+	}
+	
+	option = { #LON Pulls
+		name = "LON_pulls"
+		ai_chance = { factor = 10 }
+		set_global_flag = LON_pulls
+		add_prestige = -25
+		add_legitimacy = -15
+	}
+}
+
+#GRA A
+
+country_event = {
+	id = Surrender_of_madrid.2
+	title = "Surrender_of_madrid.2.t"
+	desc = "Surrender_of_madrid.2.d"
+	picture = CHURCH_ESTATE_2_eventPicture 
+	
+	trigger = {
+		has_global_flag = LON_pushes
+		NOT = { has_global_flag = Surrender_of_madrid.2 }
+		normal_or_historical_nations = yes
+		NOT = { is_year = 1500 }
+		tag = GRA
+		religion = sunni
+	}
+	
+	immediate = {
+		set_global_flag = Surrender_of_madrid.2
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {			#GRA pushed claim
+		name = "GRA_pushes"
+		ai_chance = { factor = 75 }
+		set_global_flag = GRA_pushes
+		declare_war_with_cb = {
+			who = LON
+			casus_belli = cb_annex
+		}
+	}
+	
+	option = { # GRA pulls claim
+		name = "GRA_pulls"
+		ai_chance = { factor = 25 }
+		set_global_flag = GRA_pulls
+		add_prestige = -25
+		add_legitimacy = -15
+		217 = { cede_province = LON }
+		219 = { cede_province = LON } 
+		2751 = { cede_province = LON }
+		2755 = { cede_province = LON } 
+		4551 = { cede_province = LON }
+	}
+}
+
+#GRA B
+
+country_event = {
+	id = Surrender_of_madrid.3
+	title = "Surrender_of_madrid.3.t"
+	desc = "Surrender_of_madrid.3.d"
+	picture = CHURCH_ESTATE_2_eventPicture 
+	
+	trigger = {
+		has_global_flag = LON_pulls
+		NOT = { has_global_flag = Surrender_of_madrid.3 }
+		normal_or_historical_nations = yes
+		NOT = { is_year = 1500 }
+		tag = GRA
+		religion = sunni
+	}	
+	
+	immediate = {
+		set_global_flag = Surrender_of_madrid.3
+	}
+	
+	option = {
+		name = "GRA_Maintain_status_quo"
+		ai_chance = { factor = 50 }
+		set_global_flag = GRA_maintains
+		add_prestige = 15
+	}
+	
+	option = {
+		name = "GRA_partition"
+		ai_chance = { Factor = 50 }
+		set_global_flag = GRA_Partitions
+		MJT = { grant_independence }
+		219 = { cede_province = GRA }
+		2754 = { cede_province = GRA } 
+		2751 = { cede_province = GRA }
+		add_prestige = 25
+		add_stability = -1
+	}
+}

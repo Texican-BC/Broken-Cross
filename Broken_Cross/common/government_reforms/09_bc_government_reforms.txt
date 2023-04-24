@@ -1,0 +1,97 @@
+leonese_cortes_legacy = {
+	has_parliament = yes
+	icon = "crown"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	monarchy = yes
+	start_territory_to_estates = 0.3
+	modifiers = {
+    	governing_capacity_modifier = 0.1
+		num_accepted_cultures = 2
+		legitimacy = 0.5
+		max_absolutism = 5
+	}
+	ai = {
+		factor = 1
+	}
+}
+
+lombard_monarchy_legacy = {
+	icon = "states_general"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+    	governing_capacity_modifier = 0.1
+		stability_cost_modifier = -0.1
+	}
+	ai = {
+		factor = 1
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		queen = no
+		heir = no
+		duration = 4
+		has_term_election = yes
+		states_general_mechanic = {
+			statists = {
+				diplomatic_reputation = 1
+				global_unrest = -1
+				legitimacy = -0.5
+			}
+
+			monarchists = {
+				prestige = 0.5
+				manpower_recovery_speed = 0.1
+				legitimacy = 0.5
+			}
+		}
+	}
+}
+
+lombard_republic_legacy = {
+	icon = "states_general"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	legacy_government = yes
+	valid_for_new_country = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 10
+	modifiers = {
+    	governing_capacity_modifier = 0.1
+		stability_cost_modifier = -0.1
+	}
+	ai = {
+		factor = 1
+	}
+	
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		queen = no
+		heir = no
+		duration = 4
+		has_term_election = yes
+		states_general_mechanic = {
+			statists = {
+				diplomatic_reputation = 1
+				global_unrest = -1
+				legitimacy = -0.5
+			}
+
+			monarchists = {
+				prestige = 0.5
+				manpower_recovery_speed = 0.1
+				legitimacy = 0.5
+			}
+		}
+	}
+}

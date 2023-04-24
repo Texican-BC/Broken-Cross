@@ -1,0 +1,397 @@
+italu_slot_2 = {
+    slot = 2                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        culture_group = latin
+		religion = shiite
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	italu_army = {
+		icon = mission_assemble_an_army
+		position = 1
+		required_missions = { }
+		trigger = { army_size_percentage = 1 manpower_percentage = 0.6 }
+		effect = {
+			calabria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			apulia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			naples_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lazio_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			central_italy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	italu_initial_conquests = {
+		icon = mission_conquer_50_development
+		position = 2
+		required_missions = { italu_army }
+		
+		provinces_to_highlight = {
+			region = italy_region
+			religion = shiite
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				religion = shiite
+				culture_group = latin
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "uniting_italu"
+				duration = 7300
+			}
+		}
+	}
+	
+	italu_unite_iitaly = {
+		icon = mission_unite_home_region
+		position = 3
+		required_missions = { italu_initial_conquests }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = calabria_area
+				area = apulia_area
+				area = sicily_area
+				area = western_sicily_area
+				area = naples_area
+				area = lazio_area
+				area = central_italy_area
+			}
+			religion = shiite
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = sole_italu.tooltip
+				NOT = {
+					calc_true_if = {
+						all_country = {
+							capital_scope  = { region = italy_region }
+							religion = shiite
+						}
+						amount = 2
+					}
+				}
+			}
+			owns_core_province = 118 # Sanity Check in case Christians go wild
+			owns_core_province = 121
+		}
+		effect = {
+			change_tag = IIT
+			set_country_flag = formed_al_iitalia_flag
+			add_prestige = 15
+			tuscany_area = {
+				add_permanent_claim = ROOT
+			}
+			emilia_romagna_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "iitalian_sultan"
+				duration = -1
+			}
+		}
+	}
+	
+	italu_border_region = {
+		icon = mission_have_two_subjects
+		position = 4
+		required_missions = { italu_unite_iitaly }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = tuscany_area
+				area = emilia_romagna_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			tuscany_area = {
+				type = all
+				owned_by = ROOT
+			}
+			emilia_romagna_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			lombardy_area = {
+				add_permanent_claim = ROOT
+			}
+			po_valley_area = {
+				add_permanent_claim = ROOT
+			}
+			liguria_area = {
+				add_permanent_claim = ROOT
+			}
+			piedmont_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	italu_lombardy = {
+		icon = alpine_defenses
+		position = 5
+		required_missions = { italu_border_region }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = lombardy_area
+				area = po_valley_area
+				area = liguria_area
+				area = piedmont_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			lombardy_area = {
+				type = all
+				owned_by = ROOT
+			}
+			po_valley_area = {
+				type = all
+				owned_by = ROOT
+			}
+			liguria_area = {
+				type = all
+				owned_by = ROOT
+			}
+			piedmont_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			venetia_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "italu_lombards_crushed"
+				duration = 7300
+			}
+		}
+	}
+	
+	italu_venice = {
+		icon = mission_assemble_an_army
+		position = 6
+		required_missions = { italu_lombardy }
+		
+		provinces_to_highlight = {
+			area = venetia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			venetia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = "italu_crushed_venice"
+				duration = 7300
+			}
+			east_adriatic_coast_area = {
+				add_permanent_claim = ROOT
+			}
+			130 = { add_permanent_claim = ROOT }
+			4738 = { add_permanent_claim = ROOT }
+			4754 = { add_permanent_claim = ROOT }
+		}
+	}
+	
+	italu_adriatic = {
+		icon = mission_dominate_home_trade_node
+		position = 7
+		required_missions = { italu_venice }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = east_adriatic_coast_area
+				province_id = 130
+				province_id = 4738
+				province_id = 4754
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			east_adriatic_coast_area = {
+				type = all
+				owned_by = ROOT
+			}
+			130 = { owned_by = ROOT }
+			4738 = { owned_by = ROOT }
+			4754 = { owned_by = ROOT }
+		}
+		effect = {
+			add_country_modifier = {
+				name = "italu_rules_the_sea"
+				duration = -1
+			}
+			142 = { add_permanent_claim = ROOT }
+			4174 = { add_permanent_claim = ROOT }
+			4698 = { add_permanent_claim = ROOT }
+		}
+	}
+}
+
+italu_slot_1 = {
+    slot = 1                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes          # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        culture_group = latin
+		religion = shiite
+		NOT = { map_setup = map_setup_random }
+    }
+	
+	italu_christian = {
+		icon = mission_assemble_an_army
+		position = 1
+		required_missions = {  }
+		trigger = { num_of_mercenaries = 25 }
+		effect = {
+			add_country_modifier = {
+				name = "italu_mercs"
+				duration = -1
+			}
+		}
+	}
+	
+	italu_fleet = {
+		icon = a_worthy_navy
+		position = 4
+		required_missions = { italu_unite_iitaly }
+		trigger = { num_of_galley = 25 }
+		effect = {
+			corsica_sardinia_area = {
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "italu_navy"
+				duration = 7300
+			}
+		}
+	}
+	
+	italu_sardinia = {
+		icon = mission_assemble_an_army
+		position = 5
+		required_missions = { italu_fleet }
+		
+		provinces_to_highlight = {
+			area = corsica_sardinia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = { 
+			corsica_sardinia_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			tunisia_area = {
+				add_permanent_claim = ROOT
+			}
+			djerba_area = {
+				add_permanent_claim = ROOT
+			}
+			tripolitania_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	italu_africa = {
+		icon = africa_proconsulare
+		position = 6
+		required_missions = { italu_sardinia }
+		
+		provinces_to_highlight = {
+			OR = {
+				area = tunisia_area
+				area = djerba_area
+				area = tripolitania_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = { 
+			tunisia_area = {
+				type = all
+				owned_by = ROOT
+			}
+			djerba_area = {
+				type = all
+				owned_by = ROOT
+			}
+			tripolitania_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			add_prestige = 10
+		}
+	}
+}

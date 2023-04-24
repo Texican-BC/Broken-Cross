@@ -1,0 +1,79 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 61  152  180 }
+
+revolutionary_colors = { 13  8  5 } #Repubblica Ancona
+
+historical_idea_groups = {
+	defensive_ideas
+	trade_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	offensive_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	italian_condotta
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
+	austrian_jaeger
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+monarch_names = {
+	"Azzo #0" = 0
+	"Aldobrandino #1" = 1
+	"Bernardino #1" = 10
+	"Francesco #0" = 10
+	"Giovanni #0" = 10
+	"Guido #3" = 25
+	"Obizzo #1" = 5
+	"Ostasio #3" = 20
+	"Pandolfo #0" = 5
+	"Pietro #1" = 10
+	"Rinaldo #0" = 1
+	"Roberto #0" = 5
+	"Sigismondo #0" = 1
+	
+	"Francesca #0" = -1
+	"Ginerva #0" = -1
+	"Parisina #0" = -1
+}
+
+leader_names = {
+	 "d'Este" "da Polenta" "da Rimini"
+	Ingoli
+	Malatesta
+	Valturio
+}
+
+ship_names = {
+	Acqualagna Auditore 
+	Colbordolo Colonna
+	Federico Fermignano Fossombrone  
+	ghibellini "Giordano Orsini" "Giovanni Santi"
+	"Isola del Piano" 
+	Lunano 
+	Mondaino Montefeltro 
+	Oddantonio Orsini 
+	Peglio "Piero della Francesca"
+	"San Crescentino" "Sant'Angelo in Vado" 
+	Tavoleto 
+}
+
+army_names = {
+	"Armata di $PROVINCE$"
+}
